@@ -147,23 +147,16 @@ function checkAnswer(i, arr) {
   };
 }
 
-/**
- * Function to hold array of jump scare videos and play them at random intervals
- */
+function update(e) {
+  var x = e.clientX || e.touches[0].clientX;
+  var y = e.clientY || e.touches[0].clientY;
 
-function playJumpScare() {
-  videoFiles = [
-    "./assets/video/alien-jumpscare.mp4",
-    "./assets/video/evilwoman-jumpscare.mp4",
-    "./assets/video/hallway-jumpscare.mp4",
-    "./assets/video/homer-jumpscare.mp4",
-    "./assets/video/saw-jumpscare.mp4",
-    "./assets/video/monster-jumpscare.mp4",
-    "./assets/video/skeleton-jumpscare.mp4",
-    "./assets/video/spongebob-jumpscare.mp4",
-    "./assets/video/zombiechild-jumpscare.mp4",
-  ];
+  document.documentElement.style.setProperty("--cursorX", x + "px");
+  document.documentElement.style.setProperty("--cursorY", y + "px");
 }
+
+document.addEventListener("mousemove", update);
+document.addEventListener("touchmove", update);
 
 /**
  * This function increments the correct score.
