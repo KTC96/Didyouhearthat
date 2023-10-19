@@ -16,7 +16,9 @@ body {
     align-items: center;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: Creepster, sans-serif;
     font-weight: 300;
     text-align: center;
@@ -75,11 +77,25 @@ h2 {
     padding-left: 2rem;
 }
 
+/* Styling for the game level choice area */
 
+#levelchoice-area {
+    font-size: 1.2rem;
+    display: none;
+}
+
+#levelchoice-area li {
+    padding: 0.5rem;
+    margin: 0.3rem;
+    text-align: center;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
 
 /* Styling for central quiz area */
 
-#game-area{
+#game-area {
     display: none;
 }
 
@@ -96,7 +112,7 @@ ul {
     padding: 0.5rem;
     margin: 0.3rem;
     text-align: center;
-    background-color: whitesmoke;
+    background-color: black;
     border: 1px solid black;
     border-radius: 0.5rem;
 }
@@ -178,11 +194,16 @@ footer a {
 
 @media screen and (min-width: 1000px) {
 
+    #levelchoice-area li:hover {
+        background-color: #8a0303;
+        cursor: pointer;
+    }
+
     #quiz-area li:hover {
         background-color: #8a0303;
         cursor: pointer;
     }
-        
+
     .btn:hover {
         background-color: #8a0303;
         cursor: pointer;
@@ -196,7 +217,7 @@ footer a {
     }
 
     #username-area input {
-    width: 80%;
+        width: 80%;
     }
 
     img {

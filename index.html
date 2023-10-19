@@ -1,106 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="A quiz app involving scary halloween sounds"
-    />
-    <meta
-      name="keywords"
-      content="quiz, test, halloween, sounds, scary, interactive"
-    />
-    <!-- css stylesheet-->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- fontawesome -->
-    <script
-      src="https://kit.fontawesome.com/64b9a22ea9.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Google fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cardo&family=Cinzel+Decorative:wght@900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <title>Did you hear that? Halloween Sounds Quiz</title>
-  </head>
-  <body>
-    <header>
-      <h1 id="main-heading">Did you hear that?</h1>
-      <h2>Are you easily scared??</h2>
-    </header>
-    <!-- </section> To input username and display rules -->
-    <section id="username-area" class="opaque">
-      <h3>Enter a username to find out!</h3>
-      <form>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required /><br />
-        <span role="alert" id="usernameError" aria-hidden="true"></span>
-        <button type="submit" id="submit" class="btn">Submit</button>
-      </form>
-      <h3>Rules:</h3>
-      <ul id="instructions">
-        <li>Enter a username and click 'Submit'</li>
-        <li>Answer 10 questions by clicking on your chosen answer.</li>
-        <li>
-          At the end your final score will display and you can choose to play
-          again.
-        </li>
-      </ul>
-      <h3>Happy Halloween!!</h3>
-    </section>
 
-    <!-- </section> To display the quiz questions and score tracker -->
-    <section class="opaque" id="game-area">
-      <div id="quiz-area">
-        <h3 id="question-area">0</h3>
-        <div id="answers-area">
-          <ul id="answers-list"></ul>
-        </div>
-      </div>
-      <div id="question-counter">
-        Level: <span id="level"></span> / Question
-        <span id="current-question">1</span> of
-        <span id="total-questions"></span>
-      </div>
-      <div id="score-area">
-        <span class="correct"
-          ><i class="fa-solid fa-check"></i> :
-          <span id="correct-counter">0</span></span
-        >
-        <span class="wrong"
-          ><i class="fa-solid fa-x"></i> :
-          <span id="wrong-counter">0</span></span
-        >
-      </div>
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A quiz app involving scary halloween sounds" />
+  <meta name="keywords" content="quiz, test, halloween, sounds, scary, interactive" />
+  <!-- css stylesheet-->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/64b9a22ea9.js" crossorigin="anonymous"></script>
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Cinzel+Decorative:wght@900&display=swap"
+    rel="stylesheet" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <title>Did you hear that? Halloween Sounds Quiz</title>
+  <script src="haunt_your_website/ghost.js"></script>
+</head>
 
-    <!-- </footer> With GitHub and LinkedIn links -->
-    <footer>
-      <a
-        href="https://github.com/"
-        target="_blank"
-        rel="noopener"
-        aria-label="Github page of developer (opens in new tab)."
-      >
-        <i class="fa-brands fa-github"></i
-      ></a>
-      <a
-        href="https://www.linkedin.com/"
-        target="_blank"
-        rel="noopener"
-        aria-label="LinkedIn page of developer (opens in new tab)."
-      >
-        <i class="fa-brands fa-linkedin-in"></i
-      ></a>
-    </footer>
+<body onload="ghost_init(false);">
+  <header>
+    <h1 id="main-heading">Did you hear that?</h1>
+    <h2>Are you easily scared??</h2>
+  </header>
+  <!-- </section> To input username and display rules -->
+  <section id="username-area" class="opaque">
+    <h3>Enter a username to find out!</h3>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required /><br />
+      <span role="alert" id="usernameError" aria-hidden="true"></span>
+      <button type="submit" id="submit" class="btn">Submit</button>
+    </form>
+    <h3>Rules:</h3>
+    <ul id="instructions">
+      <li>Enter a username and click 'Submit'</li>
+      <li>Answer 10 questions by clicking on your chosen answer.</li>
+      <li>
+        At the end your final score will display and you can choose to play
+        again.
+      </li>
+    </ul>
+    <h3>Happy Halloween!!</h3>
+  </section>
+  <!-- </section> To display the choice of game levels -->
+  <section id="levelchoice-area" class="opaque">
+    <h3 id="levelchoice-heading">0</h3>
+    <h3>Choose your level:</h3>
+    <ul id="question-levels">
+      <li class="level" onClick="questionChoice(this,0)">Easy</li>
+      <li class="level" onClick="questionChoice(this,0)">Intermediate</li>
+      <li class="level" onClick="questionChoice(this,0)">Advanced</li>
+      <li class="level" onClick="questionChoice(this,0)">Expert</li>
+    </ul>
+  </section>
 
-    <!-- Javascript-->
-    <script type="module" src="./assets/js/script.js"></script>
-    <script src="./assets/js/questions.js"></script>
-    <noscript>Sorry your browser does not support JavaScript!</noscript>
-  </body>
+  <!-- </section> To display the quiz questions and score tracker -->
+  <section class="opaque" id="game-area">
+    <div id="quiz-area">
+      <h3 id="question-area">0</h3>
+      <div id="answers-area">
+        <ul id="answers-list"></ul>
+      </div>
+    </div>
+    <div id="question-counter">
+      Level: <span id="level"></span> / Question
+      <span id="current-question">1</span> of
+      <span id="total-questions"></span>
+    </div>
+    <div id="score-area">
+      <span class="correct"><i class="fa-solid fa-check"></i> :
+        <span id="correct-counter">0</span></span>
+      <span class="wrong"><i class="fa-solid fa-x"></i> :
+        <span id="wrong-counter">0</span></span>
+    </div>
+  </section>
+
+  <!-- </footer> With GitHub and LinkedIn links -->
+  <footer>
+    <a href="https://github.com/" target="_blank" rel="noopener"
+      aria-label="Github page of developer (opens in new tab).">
+      <i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/" target="_blank" rel="noopener"
+      aria-label="LinkedIn page of developer (opens in new tab).">
+      <i class="fa-brands fa-linkedin-in"></i></a>
+    <p>Kyle</p>
+    <p>Sarah</p>
+  </footer>
+  <p>Natalia1 test</p>
+
+  <!-- Javascript-->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/questions.js"></script>
+  <noscript>Sorry your browser does not support JavaScript!</noscript>
+</body>
+
 </html>
