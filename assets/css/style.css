@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
-
 /* reset default settings */
 
 * {
@@ -18,9 +16,10 @@ body {
     background-image: url(../images/Shutterstock_halloween.webp);
     background-size: cover;
     background-position: top right;
+    background-repeat: no-repeat;
     background-color: #000000;
     color: white;
-    font-family: Creepster, sans-serif;
+    font-family: 'Crimson Text', Serif;
     font-weight: 400;
     display: flex;
     flex-direction: column;
@@ -31,7 +30,7 @@ body {
 h1,
 h2,
 h3 {
-    font-family: Creepster, sans-serif;
+    font-family: 'Creepster', Sans-serif;
     font-weight: 300;
     text-align: center;
 }
