@@ -1,0 +1,8 @@
+body {
+    font-family: "cardo", sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: var(--bg-color2);
+    color: var(--text-color);
+    overflow: auto;
+}
