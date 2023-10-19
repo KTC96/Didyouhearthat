@@ -1,9 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+/* reset default settings */
 body {
-    font-family: "cardo", sans-serif;
-    text-align: center;
     margin: 0;
-    background-color: #BAB3ABff;
-    color: white;
+    min-height: 100vh;
     background-image: url(../images/james-kemp-unsplash.jpg);
     background-size: cover;
+    background-color: #BAB3ABff;
+    color: white;
+    font-family: Creepster, sans-serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2, h3 {
+    font-family: Creepster, sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+
+/* Styling of the central container for game content */
+
+.opaque {
+    background-color: rgba(216, 79, 6, 0.8);
+    margin-bottom: 10px;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 450px;
+}
+
+/* Styling the username and rules area */
+
+#username-area input {
+    padding: 0.5rem;
+    margin: 0.3rem;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
+
+#username-area label {
+    padding: 0.5rem;
+    margin: 0.3rem;
+    font-size: 1.2rem;
+}
+
+#usernameError {
+    display: none;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgb(246, 0, 0);
+}
+
+#usernameError.visible {
+    display: block;
+}
+
+#instructions {
+    font-size: 1.2rem;
+    font-weight: 500;
+    list-style-type: disc;
+    text-align: left;
+    padding-left: 2rem;
+}
+
+
+
+/* Styling for central quiz area */
+
+#game-area{
+    display: none;
+}
+
+#quiz-area {
+    font-size: 1.2rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#quiz-area li {
+    padding: 0.5rem;
+    margin: 0.3rem;
+    text-align: center;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+#question-counter {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#score-area {
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.correct {
+    color: rgb(7, 136, 7);
+}
+
+.wrong {
+    color: rgb(246, 0, 0);
+}
+
+#correct-counter {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+#wrong-counter {
+    margin-left: 2rem;
+}
+
+
+/* Styling of the final end of game page */
+.btn {
+    padding: 0.5rem;
+    margin: 0.3rem;
+    text-align: center;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+}
+
+img {
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #222222;
+    max-width: 350px;
+}
+
+#play-again-btn {
+    margin: 20px;
+    font-family: Creepster, sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Styling of the footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(216, 79, 6, 1);
+}
+
+footer a {
+    color: whitesmoke;
+    padding: 0.4rem;
+    margin: 0 25px 0 25px;
+    font-size: 1.5rem;
+}
+
+/* Setting responsiveness of game at different screen width */
+
+@media screen and (min-width: 1000px) {
+
+    #quiz-area li:hover {
+        background-color: #8a0303;
+        cursor: pointer;
+    }
+        
+    .btn:hover {
+        background-color: #8a0303;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .opaque {
+        width: 90%;
+    }
+
+    #username-area input {
+    width: 80%;
+    }
+
+    img {
+        width: 80%;
+    }
+
 }
