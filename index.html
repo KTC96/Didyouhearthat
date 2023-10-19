@@ -26,8 +26,9 @@
     />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <title>Did you hear that? Halloween Sounds Quiz</title>
+    <script src="haunt_your_website/ghost.js"></script>
   </head>
-  <body>
+  <body onload="ghost_init(false);">
     <header>
       <h1 id="main-heading">Did you hear that?</h1>
       <h2>Are you easily scared??</h2>
@@ -54,14 +55,14 @@
     </section>
     <!-- </section> To display the choice of game levels -->
     <section id="levelchoice-area" class="opaque">
-        <h3 id="levelchoice-heading">0</h3>
-        <h3>Choose your level:</h3>
-        <ul id='question-levels'>
-            <li class='level' onClick='questionChoice(this,0)'>Easy</li>
-            <li class='level' onClick='questionChoice(this,0)'>Intermediate</li>
-            <li class='level' onClick='questionChoice(this,0)'>Advanced</li>
-            <li class='level' onClick='questionChoice(this,0)'>Expert</li>
-        </ul>
+      <h3 id="levelchoice-heading">0</h3>
+      <h3>Choose your level:</h3>
+      <ul id="question-levels">
+        <li class="level" onClick="questionChoice(this,0)">Easy</li>
+        <li class="level" onClick="questionChoice(this,0)">Intermediate</li>
+        <li class="level" onClick="questionChoice(this,0)">Advanced</li>
+        <li class="level" onClick="questionChoice(this,0)">Expert</li>
+      </ul>
     </section>
 
     <!-- </section> To display the quiz questions and score tracker -->
@@ -110,6 +111,7 @@
       <p>Kyle</p>
       <p>Sarah</p>
     </footer>
+    <p>Kyle test</p>
 
     <!-- Javascript-->
     <script src="./assets/js/script.js"></script>
