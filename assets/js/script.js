@@ -148,6 +148,24 @@ function checkAnswer(i, arr) {
 }
 
 /**
+ * Function to hold array of jump scare videos and play them at random intervals
+ */
+
+function playJumpScare() {
+  videoFiles = [
+    "./assets/video/alien-jumpscare.mp4",
+    "./assets/video/evilwoman-jumpscare.mp4",
+    "./assets/video/hallway-jumpscare.mp4",
+    "./assets/video/homer-jumpscare.mp4",
+    "./assets/video/saw-jumpscare.mp4",
+    "./assets/video/monster-jumpscare.mp4",
+    "./assets/video/skeleton-jumpscare.mp4",
+    "./assets/video/spongebob-jumpscare.mp4",
+    "./assets/video/zombiechild-jumpscare.mp4",
+  ];
+}
+
+/**
  * This function increments the correct score.
  * Adapted from Love Maths project
  */
