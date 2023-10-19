@@ -1,0 +1,9 @@
+body {
+    font-family: "cardo", sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #BAB3ABff;
+    color: white;
+    background-image: url(../images/james-kemp-unsplash.jpg);
+    background-size: cover;
+}
