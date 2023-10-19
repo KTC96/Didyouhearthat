@@ -27,6 +27,15 @@ Listen to the audio and see if you know how the sound was made.
 
 - The quiz is an entertaining twist on the classic JavaScript quiz allowing the user to get into the Halloween spirit with its on theme styling and design.
 
+### Collaborators 
+
+- Scrum Master - Rachel Walmsley
+- Kyle Clow
+- Ulrike
+- Sarah Barter
+- Natalia Czeladka
+- Alexander Lungu
+
 ### Features
 
 - Nav Bar
