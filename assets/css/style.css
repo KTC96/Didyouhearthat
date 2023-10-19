@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+/* reset default settings */
 body {
-    font-family: "cardo", sans-serif;
-    text-align: center;
     margin: 0;
-    background-color: #BAB3ABff;
-    color: white;
+    min-height: 100vh;
     background-image: url(../images/james-kemp-unsplash.jpg);
     background-size: cover;
     background-color: #BAB3ABff;
