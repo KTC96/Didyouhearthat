@@ -1,12 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 
 /* reset default settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     min-height: 100vh;
-    background-image: url(../images/james-kemp-unsplash.jpg);
+    background-image: url(../images/Shutterstock_halloween.webp);
     background-size: cover;
-    background-color: #BAB3ABff;
+    background-position: top right;
+    background-color: #000000;
     color: white;
     font-family: Creepster, sans-serif;
     font-weight: 400;
