@@ -194,7 +194,7 @@ footer a {
 
 @media screen and (min-width: 1000px) {
 
-    #levelchoice-area li:hover{
+    #levelchoice-area li:hover {
         background-color: #8a0303;
         cursor: pointer;
     }
