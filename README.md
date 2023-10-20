@@ -46,7 +46,14 @@ Listen to the audio and see if you know how the sound was made.
 
 ### Future Features
 
-### Typography and Color Scheme 
+### Design
+
+#### Colour Scheme
+The colour scheme of "Did you hear that?" Halloween Sounds Quiz was generated from its background picture. Because it plays a crucial role in setting the tone and atmosphere of the app, we all wanted to introduce colours commonly associated with Halloween, such as black, grey, and orange. Keeping the page simple and clear was our high priority, so choosing the classic combination of black and white was a pretty obvious choice here. A few subtle shades of grey and blue emphasize the dark night design, but the cherry on the cake and the strongest colour accent of the website is a mid-toned, golden ochre shade called buff, our subdued equivalent of flashy orange.
+
+We used [Coolors](https://coolors.co/777777-d39b5b-ffffff-557596-1c234e-000000) to generate our colour palette.
+
+![Colour Palette](assets/docs/colour_palette.webp)
 
 ### Wireframes
 
