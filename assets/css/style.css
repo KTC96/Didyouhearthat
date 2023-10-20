@@ -15,24 +15,162 @@ body {
     min-height: 100vh;
     background-image: url(../images/Shutterstock_halloween.webp);
     background-size: cover;
-    background-position: top right;
+    background-position: top;
     background-repeat: no-repeat;
     background-color: #000000;
     color: white;
-    font-family: 'Crimson Text', Serif;
+    font-family: 'Crimson Text', serif;
     font-weight: 400;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-h1,
+main {
+    flex: 1 0 auto;
+    top: 50%;
+    align-items: center;
+    }
+
+header {
+    background-color: #00000080;
+}
+
+/* Logo */
+
+.logo {
+    margin-left: 20px;
+    color: #d39b5b;
+    font-family: 'Creepster', sans-serif;
+    text-shadow: #000 4px 4px 4px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 10px;
+    font-weight: 500;
+    font-size: 200%;
+}
+
+.logo img {
+    height: 80px;
+}
+
+/* Navbar */
+
+.collapse ul {
+    list-style-type: none;
+    text-shadow: #000 4px 4px 4px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.collapse li {
+    padding: 0 15px;
+    font-size: 200%;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #d39b5b;
+}
+
+.collapse a {
+    text-decoration: none;
+    color: #d39b5b;
+    }
+
+.navbar-collapse {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 20px;
+}
+
+.navbar-toggler {
+    padding: 0 40px;
+    border: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#menu {
+    line-height: 90%;
+}
+
+#menu a {
+    color: inherit;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid #777777;
+}
+
+.active {
+    border-bottom: 1px solid #777777;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 200%;
+}
+
+.logo img {
+    height: 80px;
+}
+
+/* Navbar */
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 0 15px;
+    font-size: 170%;
+    color: #d39b5b
+}
+
+a {
+    text-decoration: none;
+    color: #d39b5b;
+    }
+
+.navbar-collapse {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 20px;
+}
+
+.navbar-toggler {
+    padding: 0 40px;
+    border: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#menu {
+    line-height: 90%;
+}
+
+#menu a {
+    color: inherit;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid #777777;
+}
+
+.active {
+    border-bottom: 1px solid #777777;
+}
+
 h2,
 h3 {
     font-family: 'Creepster', Sans-serif;
     font-weight: 300;
     text-align: center;
+    color: #ffffff;
 }
 
 h2 {
@@ -43,12 +181,16 @@ h2 {
 /* Styling of the central container for game content */
 
 .opaque {
-    background-color: rgba(216, 79, 6, 0.8);
+    margin: 4rem auto;
+    background-color: #00000070;
+    color: #aab4bd;
+    text-shadow: #000 4px 4px 4px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
     margin-bottom: 10px;
     padding: 1.5rem;
     border-radius: 0.5rem;
     text-align: center;
-    width: 450px;
+    width: 50vw;
 }
 
 /* Styling the username and rules area */
@@ -81,11 +223,13 @@ h2 {
 }
 
 #instructions {
-    font-size: 1.2rem;
+    font-size: 1.rem;
     font-weight: 500;
     list-style-type: disc;
     text-align: left;
     padding-left: 2rem;
+    text-shadow: #000 4px 4px 4px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* Styling for the game level choice area */
@@ -185,20 +329,14 @@ img {
 
 /* Styling of the footer */
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: auto;
-    height: 50px;
+    padding: 20px;
     width: 100%;
-    background-color: rgba(216, 79, 6, 1);
-}
-
-footer a {
-    color: whitesmoke;
-    padding: 0.4rem;
-    margin: 0 25px 0 25px;
-    font-size: 1.5rem;
+    background-color: #00000080;
+    color: #ffffff;
+    font-size: 130%;
+    color:#d39b5b;
+    text-shadow: #000 4px 4px 4px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* Setting responsiveness of game at different screen width */
