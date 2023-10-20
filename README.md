@@ -62,11 +62,11 @@ To emphasize the contrast between different level headings, we have carefully se
 
 ![Crimson Text Font](assets/docs/crimson_text.png)
 
-- The [Creepster](https://fonts.google.com/specimen/Creepster?query=creepster) font was used for almost all of the main headings and the logo. It's a bold and eye-catching font that easily draws attention, and also a perfect match for our Halloween theme with its spooky curves and horror-related design.
+- The [Creepster](https://fonts.google.com/specimen/Creepster?query=creepster) font was used for almost all of the main headings and the logo. It's a bold and eye-catching font that easily draws attention, also a perfect match for our Halloween theme with its spooky curves and horror-related design.
 
 ![Creepster Font](assets/docs/creepster.png)
 
-- [Font Awesome](https://fontawesome.com/) icons were used for social media links.
+- [Font Awesome](https://fontawesome.com/) icons were used for social media links and spider-shaped bullet points.
 
 ### Wireframes
 
