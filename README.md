@@ -70,15 +70,29 @@ To emphasize the contrast between different level headings, we have carefully se
 
 ### Wireframes
 
-### Technology
-- HTML
-- CSS
-- JavaScript
-- Git
-- GitHub
-- GitPages
-- Font Awesome
-- GoogleFonts
+### Technologies Used
+
+### Languages Used
+
+- [HTML](https://en.wikipedia.org/wiki/HTML) - used for the main site content.
+- [CSS](https://en.wikipedia.org/wiki/CSS) - used for the main site design and layout.
+- [JavaScript](https://www.javascript.com) - used for user interaction on the site.
+
+### Frameworks, Libraries and Programs Used
+
+- [Am I responsive?](https://ui.dev/amiresponsive) - used to check the site's responsiveness and to create mockups.
+- [Bootstrap v5.3](https://getbootstrap.com/) - used to assist with responsiveness by utilizing its components and layout elements.
+- [Coolors](https://coolors.co/) - used to create the colour palette.
+- [Font Awesome](https://fontawesome.com/) - used to provide icons across the website.
+- [Free Convert](https://www.freeconvert.com/jpg-to-webp) - used to convert jpg/png images to webp format.
+- [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - used to inspect and debug the code.
+- [Google Fonts](https://fonts.google.com/) - used to import the fonts that style all of the text content.
+- [Git](https://git-scm.com/) - used for version control by utilizing VS Code's terminal.
+- [GitHub](https://github.com/) - used to store the project's code and images in the repository.
+- [GitHub Pages](https://pages.github.com/) - used to deploy the website.
+- [Icon-Icons](https://icon-icons.com/) - used to provide the favicon.
+- [Tiny.png](https://tinypng.com/) - used to reduce the size of the image files.
+- [Visual Studio Code](https://code.visualstudio.com/) - used as a code editor.
 
 ### Testing
 - HTML - https://validator.w3.org/ 
