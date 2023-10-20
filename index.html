@@ -59,12 +59,10 @@
   <!-- </section> To display the choice of game levels -->
   <section id="levelchoice-area" class="opaque">
     <h3 id="levelchoice-heading">0</h3>
-    <h3>Choose your level:</h3>
+    <h3>Choose your Topic:</h3>
     <ul id="question-levels">
-      <li class="level" onClick="questionChoice(this,0)">Easy</li>
-      <li class="level" onClick="questionChoice(this,0)">Intermediate</li>
-      <li class="level" onClick="questionChoice(this,0)">Advanced</li>
-      <li class="level" onClick="questionChoice(this,0)">Expert</li>
+      <li class="level" onClick="questionChoice(this,0)">Movies</li>
+      <li class="level" onClick="questionChoice(this,0)">Sounds</li>
     </ul>
   </section>
   <!-- <video
@@ -87,7 +85,8 @@
   <section class="opaque" id="game-area">
     <div id="quiz-area">
       <h3 id="question-area">0</h3>
-        <audio id="myAudio" controls autoplay> 
+        <audio id="myAudio" controls> 
+            <!-- <source id="mp4_src" src="#" type="audio/mp3">  -->
             <source id="mp4_src" src="assets/audio/test.mp3" type="audio/mp3"> 
         </audio> 
       <div id="answers-area">
@@ -127,13 +126,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
-
-
-    <!-- Javascript-->
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/questions.js"></script>
-    <!-- <script src="./assets/js/jumpscare.js"></script> -->
-    <noscript>Sorry your browser does not support JavaScript!</noscript>
-  </body>
 </html>
 
