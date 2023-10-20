@@ -53,6 +53,16 @@
 
   <!-- Main Body -->
   <main>
+
+    <!-- <button onclick="my_Audio()" type="button"> 
+        Change Audio 
+    </button> 
+    <script> 
+        function my_Audio() { 
+            document.getElementById("mp4_src").src = "assets/audio/test.mp3"; 
+            document.getElementById("myAudio").load(); 
+        } 
+    </script>  -->
   <!-- </section> To input username and display rules -->
   <section id="username-area" class="opaque">
     <h2>Are you easily scared?</h2>
@@ -77,15 +87,13 @@
   <!-- </section> To display the choice of game levels -->
   <section id="levelchoice-area" class="opaque">
     <h3 id="levelchoice-heading">0</h3>
-    <h3>Choose your level:</h3>
+    <h3>Choose your Topic:</h3>
     <ul id="question-levels">
-      <li class="level" onClick="questionChoice(this,0)">Easy</li>
-      <li class="level" onClick="questionChoice(this,0)">Intermediate</li>
-      <li class="level" onClick="questionChoice(this,0)">Advanced</li>
-      <li class="level" onClick="questionChoice(this,0)">Expert</li>
+      <li class="level" onClick="questionChoice(this,0)">Movies</li>
+      <li class="level" onClick="questionChoice(this,0)">Sounds</li>
     </ul>
   </section>
-  <video
+  <!-- <video
       src="./assets/video/alien-jumpscare.mp4"
       class="video"
       id="alienVideo"
@@ -99,12 +107,16 @@
       src="./assets/video/hallway-jumpscare.mp4"
       class="video"
       id="hallwayVideo"
-    ></video>
+    ></video> -->
 
   <!-- </section> To display the quiz questions and score tracker -->
   <section class="opaque" id="game-area">
     <div id="quiz-area">
       <h3 id="question-area">0</h3>
+        <audio id="myAudio" controls> 
+            <!-- <source id="mp4_src" src="#" type="audio/mp3">  -->
+            <source id="mp4_src" src="assets/audio/test.mp3" type="audio/mp3"> 
+        </audio> 
       <div id="answers-area">
         <ul id="answers-list"></ul>
       </div>
