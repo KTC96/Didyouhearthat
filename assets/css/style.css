@@ -23,7 +23,10 @@ body {
 
 main {
     flex: 1 0 auto;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 header {
     background-color: #00000080;
@@ -97,10 +100,6 @@ header {
     box-shadow: none;
 }
 
-.logo img {
-    height: 80px;
-}
-
 /* Flashlight Overlay */
 /* :root {
     cursor: none;
@@ -143,40 +142,38 @@ header {
 
 }
 
-
-h1,
-h2,
-h3 {
-    font-family: 'Creepster', Sans-serif;
-    font-weight: 300;
-    text-align: center;
-    color: #ffffff;
-}
-
-h2 {
-    margin-top: 0;
-}
-
-
 /* Styling of the central container for game content */
 
 .opaque {
-    margin: 4rem auto;
+    margin: 1rem auto;
     background-color: #00000070;
     color: #aab4bd;
     text-shadow: #000 4px 4px 4px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
     -webkit-font-smoothing: antialiased;
     margin-bottom: 10px;
-    padding: 1.5rem;
+    padding: 4rem;
     border-radius: 0.5rem;
     text-align: center;
-    width: 50vw;
+    width: 900px;
+}
+
+.opaque h2 {
+    font-family: 'Creepster', Sans-serif;
+    letter-spacing: 2px;
+    font-size: 340%
+}
+
+.opaque h3 {
+    font-family: 'Creepster', Sans-serif;
+    letter-spacing: 2px;
+    color: #d39b5b;
+    font-size: 250%;
 }
 
 /* Styling the username and rules area */
 
 #username-area input {
-    padding: 0.5rem;
+    padding: 0.2rem;
     margin: 0.3rem;
     background-color: whitesmoke;
     border: 1px solid black;
@@ -185,9 +182,11 @@ h2 {
 }
 
 #username-area label {
-    padding: 0.5rem;
+    color: whitesmoke;
+    text-shadow: #000 4px 4px 4px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
     margin: 0.3rem;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 #usernameError {
@@ -210,6 +209,11 @@ h2 {
     padding-left: 2rem;
     text-shadow: #000 4px 4px 4px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
     -webkit-font-smoothing: antialiased;
+}
+
+#instructions li {
+    font-size: 130%;
+    list-style: none;
 }
 
 /* Styling for the game level choice area */
@@ -284,16 +288,16 @@ ul {
 
 /* Styling of the final end of game page */
 .btn_spook {
-    padding: 0.5rem;
+    padding: 0.1rem 2rem;
     margin: 0.5rem;
     text-align: center;
-    background-color: whitesmoke;
-    border: 1px solid black;
+    background-color: transparent;
+    border: 1px solid whitesmoke;
     border-radius: 0.5rem;
     text-decoration: none;
     font-size: 1.5rem;
-    font-family: Creepster, sans-serif;
-    color: black;
+    font-family: 'Creepster', sans-serif;
+    color: whitesmoke;
 }
 
 img {
@@ -396,6 +400,29 @@ footer {
         font-size: 130%;
     }
 
+    .opaque {
+        padding: 2rem;
+        width: 700px;
+    }
+    
+    .opaque h2 {
+        letter-spacing: 2px;
+        font-size: 320%
+    }
+    
+    .opaque h3 {
+        letter-spacing: 2px;
+        font-size: 230%;
+    }
+
+    #username-area label {
+        font-size: 1.4rem;
+    }
+
+    #instructions li {
+        font-size: 120%;
+    }
+
     #levelchoice-area li:hover {
         background-color: #8a0303;
         cursor: pointer;
@@ -441,6 +468,28 @@ footer {
     text-align: right;
 }
 
+.opaque {
+    padding: 1rem;
+    width: 600px;
+}
+
+.opaque h2 {
+    font-size: 300%
+}
+
+.opaque h3 {
+    letter-spacing: 2px;
+    font-size: 220%;
+}
+
+#username-area label {
+    font-size: 1.4rem;
+}
+
+#instructions li {
+    font-size: 110%;
+}
+
 footer {
     font-size: 110%;
 }
@@ -471,7 +520,25 @@ footer {
 }
 
 .opaque {
-    width: 90%;
+    padding: 0.8rem;
+    width: 600px;
+}
+
+.opaque h2 {
+    font-size: 210%
+}
+
+.opaque h3 {
+    letter-spacing: 1px;
+    font-size: 180%;
+}
+
+#username-area label {
+    font-size: 1.4rem;
+}
+
+#instructions li {
+    font-size: 110%;
 }
 
 #username-area input {
@@ -496,6 +563,28 @@ footer {
 
 .logo img {
     display: none;
+}
+
+.opaque {
+    padding: 0.8rem;
+    width: 600px;
+}
+
+.opaque h2 {
+    font-size: 210%
+}
+
+.opaque h3 {
+    letter-spacing: 1px;
+    font-size: 180%;
+}
+
+#username-area label {
+    font-size: 1.4rem;
+}
+
+#instructions li {
+    font-size: 110%;
 }
 
 footer {
