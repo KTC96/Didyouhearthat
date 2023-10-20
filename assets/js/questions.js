@@ -7,17 +7,17 @@ const QuestionsMovieSounds = [
   },
   {
     movie: "The Exorcist (1973) - Demon Growls",
-    audio: "test.mp3",
+    audio: "animals_alligator_hiss_1.mp3",
     answers: ["Pig squeals and bee buzzes", "Lion roars", "Creaking doors", 0],
   },
   {
     movie: "The Grudge (2004) - Guttural Death Rattle",
-    audio: "test.mp3",
+    audio: "animals_alligator_hiss_2.mp3",
     answers: ["Deep-sea creature call", "Vocal imitation", "Heavy plastic crumpling", 1],
   },
   {
     movie: "Sinister (2012) - Ghostly Whispers",
-    audio: "test.mp3",
+    audio: "zapsplat_shockwave_designed_002.mp3",
     answers: ["Layered whispers", "Silk cloth rub", "Echoing footsteps", 0],
   },
   {
