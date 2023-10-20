@@ -17,7 +17,7 @@ body {
 }
 
 /* Flashlight Overlay */
-:root {
+/* :root {
     cursor: none;
     --cursorX: 50vw;
     --cursorY: 50vh;
@@ -34,7 +34,7 @@ body {
             rgba(0, 0, 0, 0) 0%,
             rgba(0, 0, 0, .5) 80%,
             rgba(0, 0, 0, .95) 100%)
-}
+} */
 
 .video {
     position: fixed;

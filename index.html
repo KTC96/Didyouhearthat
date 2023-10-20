@@ -26,6 +26,16 @@
     <h1 id="main-heading">Did you hear that?</h1>
     <h2>Are you easily scared??</h2>
   </header>
+
+    <!-- <button onclick="my_Audio()" type="button"> 
+        Change Audio 
+    </button> 
+    <script> 
+        function my_Audio() { 
+            document.getElementById("mp4_src").src = "assets/audio/test.mp3"; 
+            document.getElementById("myAudio").load(); 
+        } 
+    </script>  -->
   <!-- </section> To input username and display rules -->
   <section id="username-area" class="opaque">
     <h3>Enter a username to find out!</h3>
@@ -57,7 +67,7 @@
       <li class="level" onClick="questionChoice(this,0)">Expert</li>
     </ul>
   </section>
-  <video
+  <!-- <video
       src="./assets/video/alien-jumpscare.mp4"
       class="video"
       id="alienVideo"
@@ -71,12 +81,15 @@
       src="./assets/video/hallway-jumpscare.mp4"
       class="video"
       id="hallwayVideo"
-    ></video>
+    ></video> -->
 
   <!-- </section> To display the quiz questions and score tracker -->
   <section class="opaque" id="game-area">
     <div id="quiz-area">
       <h3 id="question-area">0</h3>
+        <audio id="myAudio" controls autoplay> 
+            <source id="mp4_src" src="assets/audio/test.mp3" type="audio/mp3"> 
+        </audio> 
       <div id="answers-area">
         <ul id="answers-list"></ul>
       </div>
@@ -119,7 +132,7 @@
     <!-- Javascript-->
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/questions.js"></script>
-    <script src="./assets/js/jumpscare.js"></script>
+    <!-- <script src="./assets/js/jumpscare.js"></script> -->
     <noscript>Sorry your browser does not support JavaScript!</noscript>
   </body>
 </html>
