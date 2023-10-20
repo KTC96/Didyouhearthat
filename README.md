@@ -46,7 +46,27 @@ Listen to the audio and see if you know how the sound was made.
 
 ### Future Features
 
-### Typography and Color Scheme 
+### Design
+
+#### Colour Scheme
+The colour scheme of "Did you hear that?" Halloween Sounds Quiz was generated from its background picture. Because it plays a crucial role in setting the tone and atmosphere of the app, we all wanted to introduce colours commonly associated with Halloween, such as black, grey, and orange. Keeping the page simple and clear was our high priority, so choosing the classic combination of black and white was a pretty obvious choice here. A few subtle shades of grey and blue emphasize the dark night design, but the cherry on the cake and the strongest colour accent of the website is a mid-toned, golden ochre shade called buff, our subdued equivalent of flashy orange.
+
+We used [Coolors](https://coolors.co/777777-d39b5b-ffffff-557596-1c234e-000000) to generate our colour palette.
+
+![Colour Palette](assets/docs/colour_palette.jpg)
+
+#### Typography 
+To emphasize the contrast between different level headings, we have carefully selected two different fonts. They are both Google Fonts, but that's where the similarities end. The fonts were paired to enhance the visual hierarchy of the website and highlight essential information.
+
+- The [Crimson Text](https://fonts.google.com/specimen/Crimson+Text?query=crimson+) font is the primary font used throughout the entire website, with Serif as the fallback font. It's a clean and legible font that ensures easy readability. We mainly used it to provide text content for paragraphs, quiz answers, and short notes (e.g., in the footer).
+
+![Crimson Text Font](assets/docs/crimson_text.png)
+
+- The [Creepster](https://fonts.google.com/specimen/Creepster?query=creepster) font was used for almost all of the main headings and the logo. It's a bold and eye-catching font that easily draws attention, and also a perfect match for our Halloween theme with its spooky curves and horror-related design.
+
+![Creepster Font](assets/docs/creepster.png)
+
+- [Font Awesome](https://fontawesome.com/) icons were used for social media links.
 
 ### Wireframes
 

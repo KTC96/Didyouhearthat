@@ -64,14 +64,10 @@ let score = 0;
  */
 function questionChoice(levelChoice, curr) {
   let userChoice = levelChoice.textContent;
-  if (userChoice === "Easy") {
-    allQuestions = allQuestions1;
-  } else if (userChoice === "Intermediate") {
-    allQuestions = allQuestions1;
-  } else if (userChoice === "Advanced") {
-    allQuestions = allQuestions1;
-  } else if (userChoice === "Expert") {
-    allQuestions = allQuestions1;
+  if (userChoice === "Movies") {
+    allQuestions = QuestionsMovieSounds;
+  } else if (userChoice === "Sounds") {
+    allQuestions = QuestionsMovieSounds;
   }
 
   // Start the quiz
@@ -86,16 +82,20 @@ function questionChoice(levelChoice, curr) {
   return allQuestions;
 }
 
+
+
 /**
  * This function loads the current question with answers into the game area
  * Adapted from https://www.codehim.com/vanilla-javascript/javascript-multiple-choice-questions-code/
  * @param {number} curr - number variable of the current question
  */
 function loadQuestion(curr) {
-  let question = allQuestions[curr].question;
+  let question = allQuestions[curr].movie;
+  let questionAudio = document.getElementById("mp4_src");
 
   questionArea.innerHTML = "";
   questionArea.innerHTML = question;
+  questionAudio.setAttribute("src", `assets/audio/${allQuestions[curr].audio}`);
 
   let answers = allQuestions[curr].answers;
 
