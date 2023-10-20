@@ -165,7 +165,7 @@ a {
     border-bottom: 1px solid #777777;
 }
 
-/* Flashlight Overlay */
+/* Flashlight Overlay 
 :root {
     cursor: none;
     --cursorX: 50vw;
@@ -184,6 +184,7 @@ a {
             rgba(0, 0, 0, .5) 80%,
             rgba(0, 0, 0, .95) 100%)
 }
+*/
 
 .video {
     position: fixed;
