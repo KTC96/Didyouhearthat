@@ -72,13 +72,13 @@ To emphasize the contrast between different level headings, we have carefully se
 
 ### Technologies Used
 
-### Languages Used
+#### Languages Used
 
 - [HTML](https://en.wikipedia.org/wiki/HTML) - used for the main site content.
 - [CSS](https://en.wikipedia.org/wiki/CSS) - used for the main site design and layout.
 - [JavaScript](https://www.javascript.com) - used for user interaction on the site.
 
-### Frameworks, Libraries and Programs Used
+#### Frameworks, Libraries and Programs Used
 
 - [Am I responsive?](https://ui.dev/amiresponsive) - used to check the site's responsiveness and to create mockups.
 - [Bootstrap v5.3](https://getbootstrap.com/) - used to assist with responsiveness by utilizing its components and layout elements.
@@ -101,7 +101,35 @@ To emphasize the contrast between different level headings, we have carefully se
 
 ### Test Cases
 
-### Depolyment
+### Deployment
+
+#### Deploying the project to GitHub Pages
+
+1. Log in to your GitHub account and locate the repository you would like to deploy.
+2. Navigate to the "Settings" tab at the top of your selected repository.
+3. Select "Pages" from the menu on the left-hand side of the screen.
+4. Make sure the "Select" dropdown menu shows "Deploy from a branch".
+5. From the "Branch" dropdown menu select "Main" and click "Save".
+6. The page will automatically refresh and display the link to your deployed website.
+
+#### Forking the GitHub repository
+
+By forking the repository, you make a copy of the original repository on your GitHub account to view or to make changes to, without affecting the original repository.
+
+1. Log in to your GitHub account and locate the repository you would like to fork.
+2. At the top of the repository on the right-hand side of the screen, locate the "Fork" button.
+3. After clicking on it, you should have your own copy of the original repository in your GitHub account.
+
+#### Making a local clone
+
+Making a clone is basically making a copy of the selected repository.
+
+1. Log in to your GitHub account and locate the repository you would like to clone.
+2. Click on the "Code" button just under the repository name.
+3. Copy the HTTPS link from the website address bar.
+4. Open a GitBash terminal and locate the directory where you want to place the clone.
+5. Type 'git clone' and then paste the URL you copied earlier.
+6. Press enter. Then your local clone will be created.
 
 ### Credits
 
