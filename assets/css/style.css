@@ -41,7 +41,7 @@ header {
     font-family: 'Creepster', sans-serif;
     text-shadow: #000 4px 4px 4px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
     -webkit-font-smoothing: antialiased;
-    letter-spacing: 10px;
+    letter-spacing: 8px;
     font-weight: 500;
     font-size: 200%;
 }
@@ -52,24 +52,36 @@ header {
 
 /* Navbar */
 
-.collapse ul {
-    list-style-type: none;
-    text-shadow: #000 4px 4px 4px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
-    -webkit-font-smoothing: antialiased;
+#menu {
+    line-height: 90%;
 }
 
-.collapse li {
+#menu ul {
+    list-style-type: none;
+    color: #d39b5b;
+}
+
+#menu li {
     padding: 0 15px;
     font-size: 200%;
     font-weight: 400;
     letter-spacing: 2px;
-    color: #d39b5b;
 }
 
-.collapse a {
+#menu a {
     text-decoration: none;
     color: #d39b5b;
+    text-shadow: #000 1px 1px 1px, #000 1px 1px 1px, #000 1px 1px 1px, #000 1px 1px 1px, #000 1px 1px 1px, #000 1px 1px 1px, #000 1px 1px 1px;
+    -webkit-font-smoothing: antialiased;
     }
+
+#menu a:hover {
+    border-bottom: 1.5px solid #ffffff90;
+}
+
+#menu .active {
+    border-bottom: 1.5px solid #ffffff90;
+}
 
 .navbar-collapse {
     display: flex;
@@ -87,80 +99,10 @@ header {
 .navbar-toggler-icon:focus {
     outline: none;
     box-shadow: none;
-}
-
-#menu {
-    line-height: 90%;
-}
-
-#menu a {
-    color: inherit;
-}
-
-#menu a:hover {
-    border-bottom: 1px solid #777777;
-}
-
-.active {
-    border-bottom: 1px solid #777777;
-    letter-spacing: 2px;
-    font-weight: 300;
-    font-size: 200%;
 }
 
 .logo img {
     height: 80px;
-}
-
-/* Navbar */
-
-ul {
-    list-style-type: none;
-}
-
-li {
-    padding: 0 15px;
-    font-size: 170%;
-    color: #d39b5b
-}
-
-a {
-    text-decoration: none;
-    color: #d39b5b;
-    }
-
-.navbar-collapse {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-right: 20px;
-}
-
-.navbar-toggler {
-    padding: 0 40px;
-    border: none;
-}
-
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
-}
-
-#menu {
-    line-height: 90%;
-}
-
-#menu a {
-    color: inherit;
-}
-
-#menu a:hover {
-    border-bottom: 1px solid #777777;
-}
-
-.active {
-    border-bottom: 1px solid #777777;
 }
 
 /* Flashlight Overlay */
@@ -387,6 +329,14 @@ footer {
     color:#d39b5b;
     text-shadow: #000 4px 4px 4px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
     -webkit-font-smoothing: antialiased;
+}
+
+.int-link {
+    text-decoration: none;
+    color: inherit;
+}
+.int-link:hover {
+    color: #ffffff;
 }
 
 /* Styles for the modal */
