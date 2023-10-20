@@ -31,10 +31,24 @@ Listen to the audio and see if you know how the sound was made.
 
 - Scrum Master - Rachel Walmsley
 - Kyle Clow
-- Ulrike
+- Ulrike Riemenschneider
 - Sarah Barter
 - Natalia Czeladka
 - Alexander Lungu
+
+### User Stories
+
+- Welcome Page - As a visiting user, I want to see the rules of the quiz and to be able to input my name. I then want be able to start the quiz. 
+
+- Game Selection Section - As a visiting user, I want to be able to choose between Movies and Sounds. 
+
+- Game Main Section - As a visting user, I want to be able to see the audio and connecting answers. I want to see my score recorded.
+
+- End Section - As a visiting user, I want to see my final result after completing the quiz and have the option to take the quiz again.
+
+- High Score Page - As a visiting user, I want to be to see my top three scores after playing the quiz.
+
+- Creators Page - As a visting user, I want to be able to learn more about the creators of the app.
 
 ### Features
 
@@ -43,13 +57,15 @@ Listen to the audio and see if you know how the sound was made.
 - Username input
 - Quiz Start Section
 - Quiz End Section
+- High Score Page
+- Creators Page
 
 ### Future Features
 
 ### Design
 
 #### Colour Scheme
-The colour scheme of "Did you hear that?" Halloween Sounds Quiz was generated from its background picture. Because it plays a crucial role in setting the tone and atmosphere of the app, we all wanted to introduce colours commonly associated with Halloween, such as black, grey, and orange. Keeping the page simple and clear was our high priority, so choosing the classic combination of black and white was a pretty obvious choice here. A few subtle shades of grey and blue emphasize the dark night design, but the cherry on the cake and the strongest colour accent of the website is a mid-toned, golden ochre shade called buff, our subdued equivalent of flashy orange.
+The colour scheme of "Did you hear that?" Halloween Sounds Quiz was generated from its background picture. Because it plays a crucial role in setting the tone and atmosphere of the app, we all wanted to introduce colours commonly associated with Halloween, such as black, grey, and orange. Keeping the page simple and clear was our highest priority, so choosing the classic combination of black and white was a pretty obvious choice here. A few subtle shades of grey and blue emphasize the dark night design, but the cherry on the cake and the strongest colour accent of the website is a mid-toned, golden ochre shade called buff, our subdued equivalent of flashy orange.
 
 We used [Coolors](https://coolors.co/777777-d39b5b-ffffff-557596-1c234e-000000) to generate our colour palette.
 
@@ -58,7 +74,7 @@ We used [Coolors](https://coolors.co/777777-d39b5b-ffffff-557596-1c234e-000000) 
 #### Typography 
 To emphasize the contrast between different level headings, we have carefully selected two different fonts. They are both Google Fonts, but that's where the similarities end. The fonts were paired to enhance the visual hierarchy of the website and highlight essential information.
 
-- The [Crimson Text](https://fonts.google.com/specimen/Crimson+Text?query=crimson+) font is the primary font used throughout the entire website, with Serif as the fallback font. It's a clean and legible font that ensures easy readability. We mainly used it to provide text content for paragraphs, quiz answers, and short notes (e.g., in the footer).
+- The [Crimson Text](https://fonts.google.com/specimen/Crimson+Text?query=crimson+) font is the primary font used throughout the entire website, with Serif as the fallback font. It's a clean and legible font that ensures easy readability. We mainly used it to provide text content for paragraphs, quiz answers, and short notes (e.g. in the footer).
 
 ![Crimson Text Font](assets/docs/crimson_text.png)
 
@@ -79,6 +95,8 @@ To emphasize the contrast between different level headings, we have carefully se
 - GitPages
 - Font Awesome
 - GoogleFonts
+- Bootstrap
+- Coolers
 
 ### Testing
 - HTML - https://validator.w3.org/ 
@@ -91,6 +109,15 @@ To emphasize the contrast between different level headings, we have carefully se
 
 ### Credits
 
+- For the jumpscares and the ghost that haunts the app - https://github.com/alienmelon/JUMP_SCARES_FOR_YOUR_WEBSITE
+- Images open sourced from - https://www.shutterstock.com/, https://www.unsplash.com/
+- Audio files open sourced from - 
+
+
 #### Code from the team's projects
-The team combined code from personal quiz projects - https://github.com/KTC96/TheGreenDragonPubQuiz/blob/main/assets/JS/script.js, https://github.com/URiem/geography-game/blob/main/assets/js/script.js, https://github.com/barty-s/art-quiz-app/blob/main/assets/js/script.js
+
+The team combined code from personal quiz projects: 
+- https://github.com/KTC96/TheGreenDragonPubQuiz/blob/main/assets/JS/script.js 
+- https://github.com/URiem/geography-game/blob/main/assets/js/script.js 
+- https://github.com/barty-s/art-quiz-app/blob/main/assets/js/script.js
 
