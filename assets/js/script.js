@@ -7,6 +7,7 @@
 // The username is stored in localStorage.
 // If a user has already provided a username and wants to play again with the same username,
 // the user is not required to enter the username again.
+
 if (window.localStorage.getItem("username")) {
   document.getElementById("levelchoice-area").style.display = "initial";
   document.getElementById("username-area").style.display = "none";
@@ -47,6 +48,7 @@ function validate(e) {
   document.getElementById(
     "levelchoice-heading"
   ).innerText = `Welcome to the game ${user}!`;
+  openRandomVideo();
 }
 
 let questionArea = document.getElementById("question-area");
@@ -81,8 +83,6 @@ function questionChoice(levelChoice, curr) {
 
   return allQuestions;
 }
-
-
 
 /**
  * This function loads the current question with answers into the game area
@@ -190,3 +190,38 @@ function load(myURL) {
 function gameOver() {
   window.location.assign("end_game.html");
 }
+
+const videos = document.querySelectorAll(".video");
+
+function openRandomVideo() {
+  // Choose a random video to play
+  const randomIndex = Math.floor(Math.random() * videos.length);
+  const video = videos[randomIndex];
+
+  // Pause all videos and remove the 'playing' class
+  videos.forEach((video) => {
+    video.pause();
+    video.classList.remove("playing");
+  });
+
+  // Play the selected video
+  video.classList.add("playing");
+  video.play();
+
+  // Schedule the next video to play after a random interval
+  setTimeout(openRandomVideo, getRandomInterval());
+
+  // Add an event listener to hide the video when it ends
+  video.addEventListener("ended", () => {
+    video.classList.remove("playing");
+  });
+}
+
+// Function to get a random interval in milliseconds
+function getRandomInterval() {
+  // Adjust the range and values as needed
+  return Math.floor(Math.random() * (50000 - 30000) + 30000);
+}
+
+// Start the process
+openRandomVideo();
