@@ -7,7 +7,7 @@
 // The username is stored in localStorage.
 // If a user has already provided a username and wants to play again with the same username,
 // the user is not required to enter the username again.
-
+playTheme();
 if (window.localStorage.getItem("username")) {
   document.getElementById("levelchoice-area").style.display = "initial";
   document.getElementById("username-area").style.display = "none";
@@ -48,6 +48,7 @@ function validate(e) {
   document.getElementById(
     "levelchoice-heading"
   ).innerText = `Welcome to the game ${user}!`;
+
   openRandomVideo();
 }
 
@@ -65,6 +66,7 @@ let score = 0;
  * @returns {array} allQuestions - array of questions used in the quiz
  */
 function questionChoice(levelChoice, curr) {
+  pauseTheme();
   let userChoice = levelChoice.textContent;
   if (userChoice === "Movies") {
     allQuestions = QuestionsMovieSounds;
@@ -223,5 +225,22 @@ function getRandomInterval() {
   return Math.floor(Math.random() * (50000 - 30000) + 30000);
 }
 
+function playTheme() {
+  var soundFile = "./assets/audio/halloween-theme.mp3";
+  audio = new Audio(soundFile);
+  audio.play();
+}
+
+function pauseTheme() {
+  if (audio) {
+    audio.pause();
+  }
+}
+
 // Start the process
 openRandomVideo();
+
+module.exports = {
+  pauseTheme,
+  playTheme,
+};
