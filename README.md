@@ -53,7 +53,20 @@ The colour scheme of "Did you hear that?" Halloween Sounds Quiz was generated fr
 
 We used [Coolors](https://coolors.co/777777-d39b5b-ffffff-557596-1c234e-000000) to generate our colour palette.
 
-![Colour Palette](assets/docs/colour_palette.webp)
+![Colour Palette](assets/docs/colour_palette.jpg)
+
+#### Typography 
+To emphasize the contrast between different level headings, we have carefully selected two different fonts. They are both Google Fonts, but that's where the similarities end. The fonts were paired to enhance the visual hierarchy of the website and highlight essential information.
+
+- The [Crimson Text](https://fonts.google.com/specimen/Crimson+Text?query=crimson+) font is the primary font used throughout the entire website, with Serif as the fallback font. It's a clean and legible font that ensures easy readability. We mainly used it to provide text content for paragraphs, quiz answers, and short notes (e.g., in the footer).
+
+![Crimson Text Font](assets/docs/crimson_text.png)
+
+- The [Creepster](https://fonts.google.com/specimen/Creepster?query=creepster) font was used for almost all of the main headings and the logo. It's a bold and eye-catching font that easily draws attention, and also a perfect match for our Halloween theme with its spooky curves and horror-related design.
+
+![Creepster Font](assets/docs/creepster.png)
+
+- [Font Awesome](https://fontawesome.com/) icons were used for social media links.
 
 ### Wireframes
 
