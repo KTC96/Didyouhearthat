@@ -27,8 +27,6 @@ body {
 
 main {
     flex: 1 0 auto;
-    top: 50%;
-    align-items: center;
     }
 
 header {
@@ -170,9 +168,9 @@ a {
     cursor: none;
     --cursorX: 50vw;
     --cursorY: 50vh;
-}
+} */
 
-:root:before {
+/* :root:before {
     content: '';
     display: block;
     width: 100%;
