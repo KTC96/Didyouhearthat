@@ -10,7 +10,7 @@
 ## by the GhoulGroovers 
  
 ### Deployment
-The project is deployed and can be accessed at [http://your-deployed-link.com](http://your-deployed-link.com).
+The project is deployed and can be accessed at [Didyouhearthat](https://ktc96.github.io/Didyouhearthat/).
 
 ## ABOUT 
 ### Intro
