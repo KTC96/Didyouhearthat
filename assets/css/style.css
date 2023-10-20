@@ -6,10 +6,6 @@
     border: 0;
 }
 
-html {
-    height: 100%;
-}
-
 body {
     margin: 0;
     min-height: 100vh;
@@ -324,7 +320,6 @@ footer {
     padding: 20px;
     width: 100%;
     background-color: #00000080;
-    color: #ffffff;
     font-size: 130%;
     color:#d39b5b;
     text-shadow: #000 4px 4px 4px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
@@ -373,7 +368,33 @@ footer {
 
 /* Setting responsiveness of game at different screen width */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+
+    #menu li {
+        padding: 0 10px;
+        font-size: 180%;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    footer {
+        font-size: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+
+    .logo {
+        margin-left: 10px;
+        letter-spacing: 1px;
+        font-size: 160%;
+    }
+
+    #menu li {
+        padding: 0 5px;
+        letter-spacing: 0px;
+        font-size: 130%;
+    }
 
     #levelchoice-area li:hover {
         background-color: #8a0303;
@@ -389,20 +410,95 @@ footer {
         background-color: #8a0303;
         cursor: pointer;
     }
+
+    footer {
+        font-size: 110%;
+    }
+
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (min-width: 450px) and (max-width: 768px) {
 
-    .opaque {
-        width: 90%;
-    }
+.logo {
+    margin-left: 20px;
+    letter-spacing: 1px;
+    font-size: 170%;
+}
 
-    #username-area input {
-        width: 80%;
-    }
+.logo img {
+    height: 50px;
+    width: 50px;
+}
 
-    img {
-        width: 80%;
-    }
+.navbar-toggler {
+    padding: 0 20px;
+}
 
+#menu li {
+    padding: 0 15px;
+    font-size: 140%;
+    display: block;
+    text-align: right;
+}
+
+footer {
+    font-size: 110%;
+}
+}
+
+@media screen and (min-width: 346px) and (max-width: 450px) {
+
+.logo {
+    margin-left: 10px;
+    letter-spacing: 1px;
+    font-size: 125%;
+}
+
+.logo img {
+    height: 35px;
+    width: 35px;
+}
+
+.navbar-toggler {
+    padding: 0 20px;
+}
+
+#menu li {
+    padding: 0 15px;
+    font-size: 120%;
+    display: block;
+    text-align: right;
+}
+
+.opaque {
+    width: 90%;
+}
+
+#username-area input {
+    width: 80%;
+}
+
+img {
+    width: 80%;
+}
+
+footer {
+    font-size: 100%;
+}
+}
+
+@media screen and (max-width: 345px) {
+
+.logo {
+    letter-spacing: 1px;
+    font-size: 120%;
+}
+
+.logo img {
+    display: none;
+}
+
+footer {
+    font-size: 100%;
+}
 }
