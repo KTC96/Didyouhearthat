@@ -95,8 +95,7 @@ function loadQuestion(curr) {
 
   questionArea.innerHTML = "";
   questionArea.innerHTML = question;
-//   questionAudio.setAttribute("src", `assets/audio/${allQuestions[curr].audio}`);
-  questionAudio.setAttribute("src", "./assets/audio/test.mp3");
+  questionAudio.setAttribute("src", `assets/audio/${allQuestions[curr].audio}`);
 
   let answers = allQuestions[curr].answers;
 

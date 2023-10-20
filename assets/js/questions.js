@@ -2,12 +2,12 @@
 const QuestionsMovieSounds = [
   {
     movie: "Psycho (1960) - Shower Scene Stabs",
-    audio: "test.mp3",
+    audio: "refrigerator_plastic_drawer_open_close.mp3",
     answers: ["Stabbing a melon", "Tearing wet cloth", "Breaking glass", 0],
   },
   {
     movie: "The Exorcist (1973) - Demon Growls",
-    audio: "animals_alligator_hiss_1.mp3",
+    audio: "vacuum_cleaner_on_off.mp3",
     answers: ["Pig squeals and bee buzzes", "Lion roars", "Creaking doors", 0],
   },
   {
@@ -22,12 +22,12 @@ const QuestionsMovieSounds = [
   },
   {
     movie: "The Ring (2002) - Distorted Video Sounds",
-    audio: "test.mp3",
+    audio: "animals_alligator_hiss_1.mp3",
     answers: ["White noise distortions", "Radio static", "Dripping water", 0],
   },
   {
     movie: "The Blair Witch Project (1999) - Distant Screams",
-    audio: "test.mp3",
+    audio: "plastic_wide_bucket_empty.mp3",
     answers: ["Train whistles", "Wolf howls", "Human screams", 2],
   },
   {
