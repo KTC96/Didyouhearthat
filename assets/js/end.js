@@ -8,10 +8,10 @@ let user = window.localStorage.getItem("username");
 
 // Set personalized content of text fields on final page
 finalScoreUser.innerText = `Hi ${user}! Your final score was:` ;
-finalScore.innerText = `${mostRecentScore} @ ${userLevel} Level` ;
+finalScore.innerText = `${mostRecentScore} @ ${userLevel}` ;
 
 // If statement designed to display a custom message depending on the users score
-if (userLevel == 'Easy') {
+if (userLevel == 'Movie') {
     if (mostRecentScore < 4) {
         document.getElementById('final-message').innerText = "Start Exploring!! There is so much more to learn!";
     } else if (mostRecentScore <= 8) {
@@ -19,7 +19,7 @@ if (userLevel == 'Easy') {
     } else {
         document.getElementById('final-message').innerText = "Excellent result! Why not try the next level?";
     }
-} else if (userLevel == 'Intermediate') {
+} else if (userLevel == 'Sounds') {
     if (mostRecentScore < 4) {
         document.getElementById('final-message').innerText = "Good progress!! Keep learning!";
     } else if (mostRecentScore <= 8) {
@@ -27,23 +27,7 @@ if (userLevel == 'Easy') {
     } else {
         document.getElementById('final-message').innerText = "Excellent result! Why not try the next level?";
     }
-} else if (userLevel == 'Advanced') {
-    if (mostRecentScore < 4) {
-        document.getElementById('final-message').innerText = "Ask for a globe for Christmas and keep learning!";
-    } else if (mostRecentScore <= 8) {
-        document.getElementById('final-message').innerText = "Check out a map! See if you can figure out the answers!";
-    } else {
-        document.getElementById('final-message').innerText = "Excellent result! Are you ready to be an expert?";
-    }
-} else if (userLevel == 'Expert') {
-    if (mostRecentScore < 4) {
-        document.getElementById('final-message').innerText = "You are almost an expert!! Keep at it!";
-    } else if (mostRecentScore <= 8) {
-        document.getElementById('final-message').innerText = "Wow!! You probalby love studying maps!!";
-    } else {
-        document.getElementById('final-message').innerText = "Amazing!! Do you know the capitals of the remaining 155 countries aswell?";
-    }
-}
+} 
 
 const playAgainSameUser = document.getElementById("play-again-same-user");
 playAgainSameUser.innerHTML = `<i class="fa-solid fa-rotate-left"></i> Play again as ${user}` ;
