@@ -72,7 +72,7 @@ header {
     color: #d39b5b;
     text-shadow: #000 1px 1px 1px, #000 1px 1px 1px, #000 1px 1px 1px, #000 1px 1px 1px, #000 1px 1px 1px, #000 1px 1px 1px, #000 1px 1px 1px;
     -webkit-font-smoothing: antialiased;
-    }
+}
 
 #menu a:hover {
     border-bottom: 1.5px solid #ffffff90;
@@ -285,6 +285,19 @@ ul {
     margin-left: 2rem;
 }
 
+/* Styling of the Creators page */
+
+.social_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_link li{
+    display: inline-block;
+    padding: 6px;
+}
+
 
 /* Styling of the final end of game page */
 .btn_spook {
@@ -325,7 +338,7 @@ footer {
     width: 100%;
     background-color: #00000080;
     font-size: 130%;
-    color:#d39b5b;
+    color: #d39b5b;
     text-shadow: #000 4px 4px 4px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
     -webkit-font-smoothing: antialiased;
 }
@@ -334,6 +347,7 @@ footer {
     text-decoration: none;
     color: inherit;
 }
+
 .int-link:hover {
     color: #ffffff;
 }
@@ -404,12 +418,12 @@ footer {
         padding: 2rem;
         width: 700px;
     }
-    
+
     .opaque h2 {
         letter-spacing: 2px;
         font-size: 320%
     }
-    
+
     .opaque h3 {
         letter-spacing: 2px;
         font-size: 230%;
@@ -446,148 +460,148 @@ footer {
 
 @media screen and (min-width: 450px) and (max-width: 768px) {
 
-.logo {
-    margin-left: 20px;
-    letter-spacing: 1px;
-    font-size: 170%;
-}
+    .logo {
+        margin-left: 20px;
+        letter-spacing: 1px;
+        font-size: 170%;
+    }
 
-.logo img {
-    height: 50px;
-    width: 50px;
-}
+    .logo img {
+        height: 50px;
+        width: 50px;
+    }
 
-.navbar-toggler {
-    padding: 0 20px;
-}
+    .navbar-toggler {
+        padding: 0 20px;
+    }
 
-#menu li {
-    padding: 0 15px;
-    font-size: 140%;
-    display: block;
-    text-align: right;
-}
+    #menu li {
+        padding: 0 15px;
+        font-size: 140%;
+        display: block;
+        text-align: right;
+    }
 
-.opaque {
-    padding: 1rem;
-    width: 600px;
-}
+    .opaque {
+        padding: 1rem;
+        width: 600px;
+    }
 
-.opaque h2 {
-    font-size: 300%
-}
+    .opaque h2 {
+        font-size: 300%
+    }
 
-.opaque h3 {
-    letter-spacing: 2px;
-    font-size: 220%;
-}
+    .opaque h3 {
+        letter-spacing: 2px;
+        font-size: 220%;
+    }
 
-#username-area label {
-    font-size: 1.4rem;
-}
+    #username-area label {
+        font-size: 1.4rem;
+    }
 
-#instructions li {
-    font-size: 110%;
-}
+    #instructions li {
+        font-size: 110%;
+    }
 
-footer {
-    font-size: 110%;
-}
+    footer {
+        font-size: 110%;
+    }
 }
 
 @media screen and (min-width: 346px) and (max-width: 450px) {
 
-.logo {
-    margin-left: 10px;
-    letter-spacing: 1px;
-    font-size: 125%;
-}
+    .logo {
+        margin-left: 10px;
+        letter-spacing: 1px;
+        font-size: 125%;
+    }
 
-.logo img {
-    height: 35px;
-    width: 35px;
-}
+    .logo img {
+        height: 35px;
+        width: 35px;
+    }
 
-.navbar-toggler {
-    padding: 0 20px;
-}
+    .navbar-toggler {
+        padding: 0 20px;
+    }
 
-#menu li {
-    padding: 0 15px;
-    font-size: 120%;
-    display: block;
-    text-align: right;
-}
+    #menu li {
+        padding: 0 15px;
+        font-size: 120%;
+        display: block;
+        text-align: right;
+    }
 
-.opaque {
-    padding: 0.8rem;
-    width: 600px;
-}
+    .opaque {
+        padding: 0.8rem;
+        width: 600px;
+    }
 
-.opaque h2 {
-    font-size: 210%
-}
+    .opaque h2 {
+        font-size: 210%
+    }
 
-.opaque h3 {
-    letter-spacing: 1px;
-    font-size: 180%;
-}
+    .opaque h3 {
+        letter-spacing: 1px;
+        font-size: 180%;
+    }
 
-#username-area label {
-    font-size: 1.4rem;
-}
+    #username-area label {
+        font-size: 1.4rem;
+    }
 
-#instructions li {
-    font-size: 110%;
-}
+    #instructions li {
+        font-size: 110%;
+    }
 
-#username-area input {
-    width: 80%;
-}
+    #username-area input {
+        width: 80%;
+    }
 
-img {
-    width: 80%;
-}
+    img {
+        width: 80%;
+    }
 
-footer {
-    font-size: 100%;
-}
+    footer {
+        font-size: 100%;
+    }
 }
 
 @media screen and (max-width: 345px) {
 
-.logo {
-    letter-spacing: 1px;
-    font-size: 120%;
-}
+    .logo {
+        letter-spacing: 1px;
+        font-size: 120%;
+    }
 
-.logo img {
-    display: none;
-}
+    .logo img {
+        display: none;
+    }
 
-.opaque {
-    padding: 0.8rem;
-    width: 600px;
-}
+    .opaque {
+        padding: 0.8rem;
+        width: 600px;
+    }
 
-.opaque h2 {
-    font-size: 210%
-}
+    .opaque h2 {
+        font-size: 210%
+    }
 
-.opaque h3 {
-    letter-spacing: 1px;
-    font-size: 180%;
-}
+    .opaque h3 {
+        letter-spacing: 1px;
+        font-size: 180%;
+    }
 
-#username-area label {
-    font-size: 1.4rem;
-}
+    #username-area label {
+        font-size: 1.4rem;
+    }
 
-#instructions li {
-    font-size: 110%;
-}
+    #instructions li {
+        font-size: 110%;
+    }
 
-footer {
-    font-size: 100%;
-}
+    footer {
+        font-size: 100%;
+    }
 }
