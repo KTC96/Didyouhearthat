@@ -14,11 +14,13 @@ The project is deployed and can be accessed at [Didyouhearthat](https://ktc96.gi
 
 ## ABOUT 
 ### Intro
+
 This quiz tests the user's knowledge of Spooky Halloween Sounds. 
 
 Listen to the audio and see if you know how the sound was made.
 
 ### Goal
+
 - The goal of this project was to create an interactive Halloween themed quiz. 
 
 - It provides a fun and challenging way for users to test how well they know the classic Halloween sound effects from their favourite spooky films.
@@ -52,13 +54,21 @@ Listen to the audio and see if you know how the sound was made.
 
 ### Features
 
-- Nav Bar
-- Quiz rules
-- Username input
-- Quiz Start Section
-- Quiz End Section
-- High Score Page
-- Creators Page
+- Nav Bar - The title of the quiz is visible next to the app's logo. The title acts a link to the main page of the quiz. To the right there are links to the pages "Halloween Quiz" (the main quiz page), "High Score" (a page listing the user's high scores),and "Creators" (a page giving details on the app's creators). The same nav bar is displayed on every page of the app. On small screen devices the nav bar displays the app name and logo and a burger menu for the other page links.
+
+- Quiz rules - The user will see the quiz rules on loading the app for the first time. 
+
+- Username input - The user is invited to type in their name. This makes the app more personal and will be used at the end of the game and on the High Score page.
+
+- Quiz Start Section - The quiz section displays the first question showing the title of the film, the audio file which the user clicks to listen to, and three answer options. The user will see the total number of questions in the quiz and what number question they are answering. The will also see their total correct and total incorrect answers.
+
+- Quiz End Section - The user's final score is displayed. They then have the option to play again with the same name or to input a new name.
+
+- High Score Page - 
+
+- Creators Page - The names of all the contributing developers are displayed along with links to their GitHub profiles, LinkedIn profiles and other social media accounts.
+
+- Footer - The copyright for the app is displayed. There is also a link to the app creators page. The same content is displayed on every page.
 
 ### Future Features
 
@@ -86,6 +96,10 @@ To emphasize the contrast between different level headings, we have carefully se
 
 ### Wireframes
 
+![Wireframes1](assets/docs/wireframes1.png)
+
+![Wireframes2](assets/docs/wireframes2.png)
+
 ### Technology
 - HTML
 - CSS
@@ -106,6 +120,21 @@ To emphasize the contrast between different level headings, we have carefully se
 ### Test Cases
 
 ### Depolyment
+
+#### GitHub pages for deployment
+
+The steps taken to deploy the project:
+1. Naviagate to Settings on the GitHub repo page.
+2. Click on Pages.
+3. Click deploy from branch.
+
+#### To clone the repo:
+
+1. On GitHub click on the green <> Code button,
+2. In the dropdown menu select Local and copy the url for the repository.
+3. Create a file on your desktop and right click to open with code, i.e. your local environment.
+4. On the welcome page select the option Clone Git Repo and paste the URL.
+5. Save it to the folder you created on your desktop.
 
 ### Credits
 
