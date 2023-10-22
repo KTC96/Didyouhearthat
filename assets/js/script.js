@@ -68,10 +68,10 @@ let score = 0;
 function questionChoice(levelChoice, curr) {
   pauseTheme();
   let userChoice = levelChoice.textContent;
-  if (userChoice === "Movies") {
-    allQuestions = QuestionsMovieSounds;
-  } else if (userChoice === "Sounds") {
-    allQuestions = QuestionsMovieSounds;
+  if (userChoice === "Old Classic Movies") {
+    allQuestions = QuestionsMovieSoundsOld;
+  } else if (userChoice === "New Movies") {
+    allQuestions = QuestionsMovieSoundsNew;
   }
 
   // Start the quiz
