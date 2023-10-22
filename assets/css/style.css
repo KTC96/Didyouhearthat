@@ -133,6 +133,7 @@ header {
             rgba(0, 0, 0, .95) 100%)
 } */
 
+
 .video {
     position: fixed;
     top: 0;
@@ -430,6 +431,13 @@ img {
     color: whitesmoke;
 }
 
+.btn_spook>a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+
 /* Styling of the footer */
 footer {
     padding: 20px;
@@ -606,7 +614,7 @@ footer {
         font-size: 160%;
         letter-spacing: 2px;
     }
-    
+
     .intro h3 {
         font-size: 110%;
         line-height: 140%;
@@ -687,7 +695,7 @@ footer {
         font-size: 150%;
         letter-spacing: 2px;
     }
-    
+
     .intro h3 {
         font-size: 110%;
         line-height: 140%;

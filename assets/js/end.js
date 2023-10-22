@@ -30,10 +30,6 @@ playAgainSameUser.innerHTML = `<i class="fa-solid fa-rotate-left"></i> Play agai
 const playagain = document.getElementById("play-again-btn");
 playagain.addEventListener("click", returntostart);
 
-const savescore = document.getElementById("save-score");
-savescore.addEventListener("click", displayscore);
-
-
 /**
  * This function allows a user to clear the username stored and start the game over
  * with a new username.
@@ -41,7 +37,9 @@ savescore.addEventListener("click", displayscore);
  */
 function returntostart(e) {
   e.preventDefault();
-  localStorage.clear();
+  localStorage.removeItem("username");
+  localStorage.removeItem("userLevel");
+  localStorage.removeItem("mostRecentScore");
   load(startOver);
 }
 
@@ -50,9 +48,9 @@ function displayscore(e) {
   load(highscore);
 }
 
-function highscore() {
-  window.location.assign("highscore.html");
-}
+//function highscore() {
+// window.location.assign("highscore.html");
+//}
 
 /**
  * This function delays the loading of myURL
@@ -80,3 +78,38 @@ function pauseTheme() {
     audio.pause();
   }
 }
+
+// High Scores
+
+let highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+
+// Add the most recent score to the high scores array
+if (mostRecentScore && user) {
+  const newScore = {
+    score: mostRecentScore,
+    user: user,
+  };
+
+  highScores.push(newScore);
+
+  highScores.sort((a, b) => b.score - a.score);
+
+  highScores = highScores.slice(0, 3);
+
+  localStorage.setItem("highScores", JSON.stringify(highScores));
+}
+
+// Function to display high scores on the highscores.html page
+function displayHighScores() {
+  const highScoresList = document.getElementById("high-scores-list");
+
+  highScoresList.innerHTML = "";
+
+  highScores.forEach((score, index) => {
+    const listItem = document.createElement("li");
+    listItem.innerText = `${score.user}: ${score.score}`;
+    highScoresList.appendChild(listItem);
+  });
+}
+
+displayHighScores();
