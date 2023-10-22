@@ -75,19 +75,18 @@ header {
 }
 
 #menu a:hover {
-    font-size: 130%;
-    font-weight: 500;
+    font-size: 110%;
+    font-weight: 700;
 }
 
 /* Code for neon text taken from css-tricks.com and edited slightly to fit the project's needs */
 #menu .active {
-    font-size: 140%;
+    font-size: 120%;
     font-weight: 700;
     color: #f8eee4;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     text-shadow:
-        0 0 10px #f2e2d0,
         0 0 20px #f2e2d0,
         0 0 40px #d39b5b,
         0 0 50px #d39b5b,
@@ -307,9 +306,64 @@ ul {
     align-items: center;
 }
 
-.social_link li {
-    display: inline-block;
-    padding: 6px;
+.social_list ul {
+    margin-bottom: 10px;
+}
+
+.social_list li {
+    font-size: 120%;
+    line-height: 180%;
+}
+
+.social_list a {
+    padding: 5px;
+    color: #557596;
+}
+
+.social_list a:hover {
+    color: #87a0ba;
+}
+
+.creators {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    margin: 1rem 1rem 0 1rem;
+    background-color: #00000095;
+    color: #ffffff;
+    text-shadow: #000 4px 4px 4px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+    padding: 1rem 5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 1100px;
+}
+
+.intro h2 {
+    color: #d39b5b;
+    font-family: 'Creepster', sans-serif;
+    font-size: 200%;
+    letter-spacing: 4px;
+}
+
+.intro h3 {
+    font-size: 120%;
+    line-height: 150%;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.intro h4 {
+    color: #557596;
+    font-family: 'Creepster', sans-serif;
+    font-size: 300%;
+    letter-spacing: 3px;
+}
+
+.intro hr {
+    border-top: 2px solid white;
 }
 
 
