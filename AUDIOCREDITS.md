@@ -7,7 +7,7 @@
 
 # DID YOU HEAR THAT?
 
-## Credits for Audio Files used in the quiz
+## Credits for Audio Files
 
 - Psycho 1960 watermelon stabbing sound:
 https://www.youtube.com/watch?v=djGxqdZMUEs
@@ -71,3 +71,6 @@ https://www.youtube.com/watch?v=y7inxosbXfo
 
 - Alien (1979) sound effect:
 https://www.youtube.com/watch?v=3YTIMGmZUr4s
+
+- For the app's theme music:
+https://www.youtube.com/watch?v=pT4FY3NrhGg

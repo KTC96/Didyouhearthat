@@ -31,12 +31,12 @@ Listen to the audio and see if you know how the sound was made.
 
 ### Collaborators 
 
-- Scrum Master - Rachel Walmsley
-- Kyle Clow
-- Ulrike Riemenschneider
-- Sarah Barter
-- Natalia Czeladka
-- Alexander Lungu
+- Rachel Walmsley - the Scrum Master Extraordinaire
+- Kyle Clow - the Seasoned Sage
+- Ulrike Riemenschneider Ulrike Riemenschneider - the JavaScript Juggler
+- Sarah Barter - the Multitasker Dynamo
+- Natalia Czeladka - the CSS Wizard
+- Alexander Lungu - the Sound Ninja
 
 ### User Stories
 
@@ -72,11 +72,14 @@ Listen to the audio and see if you know how the sound was made.
 
 ### Future Features
 
-- A submit button under the three answer options that the user will click after making their answer selection. This will improve UX and adhere to defensive design principles.
+- A submit button under the three answer options that the user will click after making their answer selection - this will improve UX and adhere to defensive design principles.
+- A separate page displaying the instructions - Currently, the instructions are displayed only once when the user first loads the game to input their name. Even though the game is quite straight forward in terms of its rules, we would like to add a separte instructions page so that the user can navigate to that should they require to.
+- Correct or incorrect answer hightlight - We would like to have the selected answer option be highlighted in green if it is correct or else in red if it is incorrect. Currently the user can see if they were correct/incorrect as the score increments after each question is answered. But having a highlight feature would improve the UX of the app.
 
 #### Future Enhancements
 
 - To be prevent the ghost that haunts the app from passing over the quiz game section and blocking the user's access to clicking play on the audio or clicking on any of the answer options.
+- To have the answer options displayed in a random order so that if the game is played multiple times by the same player they will not see the answers displayed in the same order every time.
 
 ### Design
 
@@ -134,8 +137,6 @@ To emphasize the contrast between different level headings, we have carefully se
 
 Please follow this [link](TESTING.md) to the separate Testing documentation. 
 
-### Test Cases
-
 ### Depolyment
 
 #### GitHub pages for deployment
@@ -155,16 +156,18 @@ The steps taken to deploy the project:
 
 ### Credits
 
-- For the jumpscares and the ghost that haunts the app - https://github.com/alienmelon/JUMP_SCARES_FOR_YOUR_WEBSITE
-- Images open sourced from - https://www.shutterstock.com/, https://www.unsplash.com/
+- For the jumpscares - [Vlipsy](https://vlipsy.com)
+- For the floaty ghost haunting the app - https://github.com/alienmelon/JUMP_SCARES_FOR_YOUR_WEBSITE
+- Images open sourced from -  [Shutterstock](https://www.shutterstock.com/), [Unsplash](https://www.unsplash.com/)
 - Audio files open sourced from - see audio credit list [here](AUDIOCREDITS.md)
-- Image for 404 page sourced from - http://www.freepik.com
+- Image for 404 page open sourced from -  [Freepik](http://www.freepik.com)
 
 
 #### Code from the team's projects
 
 The team combined code from personal quiz projects: 
-- https://github.com/KTC96/TheGreenDragonPubQuiz/blob/main/assets/JS/script.js 
-- https://github.com/URiem/geography-game/blob/main/assets/js/script.js 
-- https://github.com/barty-s/art-quiz-app/blob/main/assets/js/script.js
+
+- [The Green Dragon Pub Quiz](https://github.com/KTC96/TheGreenDragonPubQuiz/blob/main/assets/JS/script.js) 
+- [Geography Game](https://github.com/URiem/geography-game/blob/main/assets/js/script.js) 
+- [Art Quiz App](https://github.com/barty-s/art-quiz-app/blob/main/assets/js/script.js)
 

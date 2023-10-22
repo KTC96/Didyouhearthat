@@ -98,3 +98,4 @@
 
 - Name put in at beginning of game is visible when the **xxxxxxxxx** page loads
 
+### Test Cases
