@@ -118,9 +118,9 @@ header {
     cursor: none;
     --cursorX: 50vw;
     --cursorY: 50vh;
-} */
+}
 
-/* :root:before {
+:root:before {
     content: '';
     display: block;
     width: 100%;
@@ -448,14 +448,13 @@ footer {
     cursor: pointer;
 }
 
-
 /* Setting responsiveness of game at different screen width */
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
 
     #menu li {
         padding: 0 10px;
-        font-size: 180%;
+        font-size: 170%;
         font-weight: 400;
         letter-spacing: 1px;
     }
@@ -517,6 +516,12 @@ footer {
         cursor: pointer;
     }
 
+    .intro {
+        margin: 1rem 1rem 0 1rem;
+        padding: 1rem 3rem;
+        width: 90%;
+    }
+
     footer {
         font-size: 110%;
     }
@@ -547,6 +552,10 @@ footer {
         text-align: right;
     }
 
+    .navbar-collapse {
+        margin-right: 10px;
+    }
+
     .opaque {
         padding: 1rem;
         width: 600px;
@@ -567,6 +576,23 @@ footer {
 
     #instructions li {
         font-size: 110%;
+    }
+
+    .intro {
+        margin: 1rem 1rem 0 1rem;
+        padding: 1rem 2rem;
+        width: 90%;
+    }
+
+    .intro h2 {
+        font-size: 160%;
+        letter-spacing: 2px;
+    }
+    
+    .intro h3 {
+        font-size: 110%;
+        line-height: 140%;
+        margin-bottom: 10px;
     }
 
     footer {
@@ -598,6 +624,11 @@ footer {
         text-align: right;
     }
 
+    .navbar-collapse {
+        margin-right: 10px;
+    }
+
+
     .opaque {
         padding: 0.8rem;
         width: 600px;
@@ -628,6 +659,28 @@ footer {
         width: 80%;
     }
 
+    .intro {
+        margin: 1rem 1rem 0 1rem;
+        padding: 1rem 1rem;
+        width: 90%;
+    }
+
+    .intro h2 {
+        font-size: 150%;
+        letter-spacing: 2px;
+    }
+    
+    .intro h3 {
+        font-size: 110%;
+        line-height: 140%;
+        margin-bottom: 10px;
+    }
+
+    .social_list li {
+        font-size: 110%;
+        line-height: 180%;
+    }
+
     footer {
         font-size: 100%;
     }
@@ -642,6 +695,11 @@ footer {
 
     .logo img {
         display: none;
+    }
+
+    #menu li {
+        padding: 0 15px;
+        font-size: 100%;
     }
 
     .opaque {
@@ -664,6 +722,12 @@ footer {
 
     #instructions li {
         font-size: 110%;
+    }
+
+    .intro {
+        margin: 1rem 1rem 0 1rem;
+        padding: 1rem 5rem;
+        width: 90%;
     }
 
     footer {
