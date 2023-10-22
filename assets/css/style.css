@@ -133,7 +133,6 @@ header {
             rgba(0, 0, 0, .95) 100%)
 } */
 
-
 .video {
     position: fixed;
     top: 0;
@@ -230,6 +229,10 @@ header {
 }
 
 /* Styling for the game level choice area */
+
+.level, #answers-list {
+    cursor: pointer;
+}
 
 #levelchoice-area {
     font-size: 1.2rem;
@@ -353,13 +356,6 @@ ul {
     line-height: 150%;
     font-weight: 400;
     margin-bottom: 20px;
-}
-
-.intro h4 {
-    color: #557596;
-    font-family: 'Creepster', sans-serif;
-    font-size: 300%;
-    letter-spacing: 3px;
 }
 
 .intro hr {
