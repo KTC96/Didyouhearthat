@@ -157,7 +157,8 @@ The steps taken to deploy the project:
 
 - For the jumpscares and the ghost that haunts the app - https://github.com/alienmelon/JUMP_SCARES_FOR_YOUR_WEBSITE
 - Images open sourced from - https://www.shutterstock.com/, https://www.unsplash.com/
-- Audio files open sourced from - 
+- Audio files open sourced from - see audio credit list [here](AUDIOCREDITS.md)
+- Image for 404 page sourced from - http://www.freepik.com
 
 
 #### Code from the team's projects
