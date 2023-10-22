@@ -224,7 +224,8 @@ function openRandomVideo() {
 // Function to get a random interval in milliseconds
 function getRandomInterval() {
   // Adjust the range and values as needed
-  return Math.floor(Math.random() * (50000 - 30000) + 30000);
+  return Math.floor(Math.random() * (50000 - 30000) + 20000);
+  // return Math.floor(Math.random() * (50000 - 30000));
 }
 
 function playTheme() {
@@ -237,10 +238,11 @@ function pauseTheme() {
   if (audio) {
     audio.pause();
   }
+  openRandomVideo();
 }
 
 // Start the process
-openRandomVideo();
+// openRandomVideo();
 
 module.exports = {
   pauseTheme,
