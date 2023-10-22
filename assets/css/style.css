@@ -333,17 +333,18 @@ img {
     max-width: 350px;
 }
 
-#play-again-btn {
-    padding: 0.5rem;
+#play-again-same-user {
+    padding: 0.35rem 2rem;
     margin: 0.5rem;
     text-align: center;
-    background-color: whitesmoke;
-    border: 1px solid black;
+    text-shadow: none;
+    background-color: transparent;
+    border: 1px solid whitesmoke;
     border-radius: 0.5rem;
     text-decoration: none;
     font-size: 1.5rem;
-    font-family: Creepster, sans-serif;
-    color: black;
+    font-family: 'Creepster', sans-serif;
+    color: whitesmoke;
 }
 
 /* Styling of the footer */

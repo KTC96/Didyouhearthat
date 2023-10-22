@@ -1,7 +1,7 @@
 // import { pauseTheme, playTheme } from "./script";
 // Variables stored in local Storage are retrieved
 // Elements are assigned variables so they can be filled with text content.
-
+playTheme();
 let finalScore = document.getElementById("final-score");
 let finalScoreUser = document.getElementById("final-score-user");
 let mostRecentScore = localStorage.getItem("mostRecentScore");
@@ -26,10 +26,13 @@ if (mostRecentScore < 4) {
 
 const playAgainSameUser = document.getElementById("play-again-same-user");
 playAgainSameUser.innerHTML = `<i class="fa-solid fa-rotate-left"></i> Play again as ${user}`;
-// playAgainSameUser.innerHTML = `<i class="fa-solid fa-rotate-left"></i> Play again as ${user}`;
 
 const playagain = document.getElementById("play-again-btn");
 playagain.addEventListener("click", returntostart);
+
+const savescore = document.getElementById("save-score");
+savescore.addEventListener("click", displayscore);
+
 
 /**
  * This function allows a user to clear the username stored and start the game over
@@ -37,11 +40,18 @@ playagain.addEventListener("click", returntostart);
  * @param {event} e - event of a click
  */
 function returntostart(e) {
-  // pauseTheme();
   e.preventDefault();
   localStorage.clear();
   load(startOver);
-  // playTheme();
+}
+
+function displayscore(e) {
+  e.preventDefault();
+  load(highscore);
+}
+
+function highscore() {
+  window.location.assign("highscore.html");
 }
 
 /**
@@ -56,9 +66,7 @@ function load(myURL) {
  * This function loads the last page when the game is over
  */
 function startOver() {
-  // pauseTheme();
   window.location.assign("index.html");
-  // playTheme();
 }
 
 function playTheme() {
