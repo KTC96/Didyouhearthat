@@ -53,16 +53,6 @@
 
   <!-- Main Body -->
   <main>
-    <!-- <button onclick="my_Audio()" type="button"> 
-        Change Audio 
-    </button> 
-    <script> 
-        function my_Audio() { 
-            document.getElementById("mp4_src").src = "assets/audio/test.mp3"; 
-            document.getElementById("myAudio").load(); 
-        } 
-    </script>  -->
-
   <!-- </section> To input username and display rules -->
   <section id="username-area" class="opaque">
     <h2>Are you easily scared?</h2>
@@ -89,8 +79,8 @@
     <h3 id="levelchoice-heading">0</h3>
     <h3>Choose your Topic:</h3>
     <ul id="question-levels">
-      <li class="level" onClick="questionChoice(this,0)">Movies</li>
-      <li class="level" onClick="questionChoice(this,0)">Sounds</li>
+      <li class="level" onClick="questionChoice(this,0)">Old Classic Movies</li>
+      <li class="level" onClick="questionChoice(this,0)">New Movies</li>
     </ul>
   </section>
   <video
@@ -143,7 +133,7 @@
   <section class="opaque" id="game-area">
     <div id="quiz-area">
       <h3 id="question-area">0</h3>
-        <audio id="mp4_src" controls src="#"> 
+        <audio id="mp4_src" controls autoplay src="#"> 
             <!-- <source id="mp4_src" src="#" type="audio/mp3">  -->
             <!-- <source id="mp4_src" src="assets/audio/zapsplat_shockwave_designed_002.mp3" type="audio/mp3">  -->
         </audio> 
