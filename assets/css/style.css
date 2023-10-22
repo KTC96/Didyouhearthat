@@ -47,6 +47,7 @@ header {
 
 .logo img {
     height: 80px;
+    border-radius: 0;
 }
 
 /* Navbar */
@@ -432,39 +433,32 @@ img {
 }
 
 /*Styling for highscores page */
-.high-scores {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 0.5rem;
-    padding: 1rem;
-    text-align: center;
-    color: #d39b5b;
-    font-family: 'Creepster', sans-serif;
-}
 
 .high-scores-label {
-    font-size: 2rem;
-    font-weight: 600;
     margin-bottom: 1rem;
 }
 
 #high-scores-list {
     list-style-type: none;
-    padding: 0;
 }
 
 #high-scores-list li {
-    font-size: 1.5rem;
-    margin: 0.5rem;
     padding: 0.5rem;
-    border: 1px solid #D39B5B;
-    /* Border color */
+    margin: 0.5rem;
     text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: black;
     border-radius: 0.5rem;
+    font-size:200%;
+    font-weight: 700;
+    color: #f8eee4;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow:
+        0 0 20px #d39b5b,
+        0 0 30px #d39b5b,
+        0 0 40px #d39b5b,
+        0 0 50px #d39b5b;
 }
-
 
 /* Styling of the footer */
 footer {
