@@ -75,11 +75,25 @@ header {
 }
 
 #menu a:hover {
-    border-bottom: 1.5px solid #ffffff90;
+    font-size: 130%;
+    font-weight: 500;
 }
 
+/* Code for neon text taken from css-tricks.com and edited slightly to fit the project's needs */
 #menu .active {
-    border-bottom: 1.5px solid #ffffff90;
+    font-size: 140%;
+    font-weight: 700;
+    color: #f8eee4;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow:
+        0 0 10px #f2e2d0,
+        0 0 20px #f2e2d0,
+        0 0 40px #d39b5b,
+        0 0 50px #d39b5b,
+        0 0 60px #d39b5b,
+        0 0 70px #d39b5b,
+        0 0 80px #d39b5b;
 }
 
 .navbar-collapse {
