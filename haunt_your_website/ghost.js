@@ -92,46 +92,6 @@ var arr_ghost_sleep = [
   "Sorry. I got caught in deep meditation for a moment.",
 ];
 //sound arrays (names of sound files)
-var arr_snd_talking = [
-  "AUD_GHOST_SAY01",
-  "AUD_GHOST_SAY02",
-  "AUD_GHOST_SAY03",
-  "AUD_GHOST_SAY04",
-  "AUD_GHOST_SAY05",
-  "AUD_GHOST_SAY06",
-  "AUD_GHOST_SAY07",
-  "AUD_GHOST_SAY08",
-  "AUD_GHOST_SAY09",
-  "AUD_GHOST_SAY10",
-  "AUD_GHOST_SAY11",
-  "AUD_GHOST_SAY12",
-  "AUD_GHOST_SAY13",
-];
-//ooohs (temp)
-var arr_snd_boo = [
-  "AUD_GHOST_BOO_01",
-  "AUD_GHOST_BOO_02",
-  "AUD_GHOST_BOO_03",
-  "AUD_GHOST_BOO_04",
-  "AUD_GHOST_BOO_05",
-  "AUD_GHOST_BOO_06",
-  "AUD_GHOST_BOO_07",
-  "AUD_GHOST_BOO_08",
-  "AUD_GHOST_BOO_09",
-  "AUD_GHOST_BOO_10",
-  "AUD_GHOST_BOO_11",
-  "AUD_GHOST_BOO_12",
-  "AUD_GHOST_BOO_13",
-  "AUD_GHOST_BOO_14",
-];
-//clicks
-var arr_snd_click = [
-  "AUD_GHOST_CLICK_01",
-  "AUD_GHOST_CLICK_02",
-  "AUD_GHOST_CLICK_03",
-  "AUD_GHOST_CLICK_04",
-  "AUD_GHOST_CLICK_05",
-];
 
 //sound var
 var snd_ghost;
@@ -210,19 +170,6 @@ function get_randTarg() {
   num_targ_y = ghost_randRange(0, ghost_returnDocHeight() - num_winHeight);
 }
 
-//SOUND
-
-function play_sleepingMusic() {
-  snd_sleep = new Audio(str_path_ghost + "audio/AUD_WARMDRYLOOP_01.mp3");
-  snd_sleep.play();
-}
-
-function stop_sleepingMusic() {
-  if (snd_sleep != undefined) {
-    snd_sleep.pause();
-  }
-}
-
 //ARRAYS
 
 //return random array element
@@ -289,9 +236,7 @@ function interval_ghost_bootup() {
 //wake her up if sleeping
 function ghost_wakeup() {
   bool_sleeping = false;
-  stop_sleepingMusic();
   ghost_showAnimation("id_ghost_default");
-  ghost_playSound(arr_snd_talking, arr_ghost_sleep, "id_ghost_talk");
 }
 
 //INTERVAL (GHOST)
@@ -312,7 +257,7 @@ function interval_ghost() {
     !bool_sleeping
   ) {
     bool_sleeping = true;
-    play_sleepingMusic();
+
     ghost_showAnimation("id_ghost_sleep");
     num_cntWakeup = ghost_randRange(200, 800); //random number till wakeup here
     console.log("Tatghoul fell asleep.");
@@ -338,7 +283,7 @@ function interval_ghost() {
     get_randTarg();
     //set to cords & animation
     ghost_setXY(tatghoul, num_targ_x, num_targ_y);
-    ghost_playSound(arr_snd_boo, arr_ghost_boo, "id_ghost_boo");
+
     //console.log("Jump scare here");
   }
   //traveling (float to destination)
@@ -379,10 +324,6 @@ function interval_move_ghost() {
     clearInterval(int_ghost);
     int_ghost = setInterval(interval_ghost, 10);
     reset_ghost();
-    //howl victoriously sometimes
-    if (Math.random() * 100 > 30) {
-      ghost_playSound(arr_snd_boo, arr_ghost_boo, "id_ghost_boo");
-    }
   }
 }
 
@@ -403,7 +344,7 @@ function reset_ghost() {
 function start_ghost() {
   reset_ghost();
   //say something (first line)
-  ghost_playSound(arr_snd_talking, arr_ghost_talking, "id_ghost_talk");
+
   //start timer/counter/int to handle activity
   int_ghost = setInterval(interval_ghost, 10);
   //listeners go here
@@ -421,31 +362,6 @@ function ghost_say(str_message) {
   //ghost_playSound(arr_snd_talking, )
 }
 
-//play a sound from array
-function ghost_playSound(snd_arr, arr_say, str_id) {
-  //lbl = "id_ghost_talk", etc...
-  if (snd_ghost != undefined) {
-    snd_ghost.pause();
-    //return
-    //clear int too
-  }
-  bool_talking = true;
-  //start
-  snd_ghost = new Audio(
-    str_path_ghost + "audio/" + ghost_returnArr(snd_arr) + ".mp3"
-  );
-  snd_ghost.play();
-  ghost_say(ghost_returnArr(arr_say));
-  //talking
-  if (str_id == "id_ghost_talk") {
-    ghost_showAnimation("id_ghost_talk");
-  }
-  //booing
-  if (str_id == "id_ghost_boo") {
-    ghost_showAnimation("id_ghost_boo");
-  }
-}
-
 //minimal interaction
 function ghost_mouseDown(e) {
   //wake her up!
@@ -453,11 +369,10 @@ function ghost_mouseDown(e) {
     ghost_wakeup();
   } else if (!bool_talking) {
     //interrupt what she is doing
-    stop_sleepingMusic(); //?? this is not necessary - take it out
+
     clearInterval(int_ghost);
     int_ghost = setInterval(interval_ghost, 10);
     reset_ghost();
-    ghost_playSound(arr_snd_talking, arr_ghost_talking, "id_ghost_talk");
   }
 }
 
@@ -492,8 +407,7 @@ function ghost_init(show_bootup) {
   message_background.id = "id_message_background";
   message_background.className = "class_message";
   message.appendChild(message_background);
-  message_background.innerHTML =
-    "<img src=" + str_path_ghost + "images/IMG_GHOST_MESSAGE.png" + ">";
+
   message_background.style.position = "absolute";
   //text - message field
   txt_message = document.createElement("div");
@@ -584,8 +498,7 @@ function ghost_init(show_bootup) {
     ghost_hideThis("id_bootup");
   }
   //play bootup audio
-  var snd_bootup = new Audio(str_path_ghost + "audio/AUD_BOOTUP_DEFAULT.mp3");
-  snd_bootup.play();
+
   //
 }
 
