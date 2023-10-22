@@ -54,10 +54,12 @@ function validate(e) {
 
 let questionArea = document.getElementById("question-area");
 let answerArea = document.getElementById("answers-list");
-let audioArea = document.getElementById("mp4_src")
+let audioArea = document.getElementById("mp4_src");
 let allQuestions;
 let current = 0;
 let score = 0;
+let questionIndex;
+let answersDone = [];
 
 /**
  * This function grabs the users choice of questions level.
@@ -136,10 +138,24 @@ function checkAnswer(i, arr) {
       incrementWrongAnswer();
     }
 
-    if (current < allQuestions.length - 1) {
+    if (current == 0) {
+      answersDone.push(current);
+    } else {
+      answersDone.push(questionIndex);
+    }
+    // console.log(answersDone);
+    if (answersDone.length < allQuestions.length) {
+      do {
+        questionIndex = Math.floor(Math.random() * allQuestions.length);
+      } while (answersDone.includes(questionIndex));
+    } else {
+      console.log("All questions have been answered");
+    }
+
+    if (answersDone.length < allQuestions.length) {
       current += 1;
       document.getElementById("current-question").innerText = current + 1;
-      loadQuestion(current);
+      loadQuestion(questionIndex);
     } else {
       questionArea.innerHTML = "Done! Final Score Page is loading ...";
       answerArea.innerHTML = "";
@@ -243,8 +259,3 @@ function pauseTheme() {
 
 // Start the process
 // openRandomVideo();
-
-module.exports = {
-  pauseTheme,
-  playTheme,
-};

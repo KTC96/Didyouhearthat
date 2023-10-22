@@ -30,10 +30,6 @@ playAgainSameUser.innerHTML = `<i class="fa-solid fa-rotate-left"></i> Play agai
 const playagain = document.getElementById("play-again-btn");
 playagain.addEventListener("click", returntostart);
 
-const savescore = document.getElementById("save-score");
-savescore.addEventListener("click", displayscore);
-
-
 /**
  * This function allows a user to clear the username stored and start the game over
  * with a new username.
@@ -41,7 +37,9 @@ savescore.addEventListener("click", displayscore);
  */
 function returntostart(e) {
   e.preventDefault();
-  localStorage.clear();
+  localStorage.removeItem("username");
+  localStorage.removeItem("userLevel");
+  localStorage.removeItem("mostRecentScore");
   load(startOver);
 }
 
@@ -50,9 +48,9 @@ function displayscore(e) {
   load(highscore);
 }
 
-function highscore() {
-  window.location.assign("highscore.html");
-}
+//function highscore() {
+// window.location.assign("highscore.html");
+//}
 
 /**
  * This function delays the loading of myURL
