@@ -54,6 +54,7 @@ function validate(e) {
 
 let questionArea = document.getElementById("question-area");
 let answerArea = document.getElementById("answers-list");
+let audioArea = document.getElementById("mp4_src")
 let allQuestions;
 let current = 0;
 let score = 0;
@@ -142,6 +143,7 @@ function checkAnswer(i, arr) {
     } else {
       questionArea.innerHTML = "Done! Final Score Page is loading ...";
       answerArea.innerHTML = "";
+      audioArea.style.display = "none";
       score = document.getElementById("correct-counter").innerText;
       localStorage.setItem("mostRecentScore", score);
       load(gameOver);
