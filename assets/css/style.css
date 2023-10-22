@@ -40,9 +40,9 @@ header {
     font-family: 'Creepster', sans-serif;
     text-shadow: #000 4px 4px 4px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
     -webkit-font-smoothing: antialiased;
-    letter-spacing: 8px;
+    letter-spacing: 6px;
     font-weight: 500;
-    font-size: 200%;
+    font-size: 220%;
 }
 
 .logo img {
@@ -143,13 +143,14 @@ header {
     padding: 4rem;
     border-radius: 0.5rem;
     text-align: center;
+    align-items: center;
     width: 900px;
 }
 
 .opaque h2 {
     font-family: 'Creepster', Sans-serif;
     letter-spacing: 2px;
-    font-size: 340%
+    font-size: 340%;
 }
 
 .opaque h3 {
@@ -245,6 +246,11 @@ audio::-webkit-media-controls-panel {
         0 0 70px #d39b5b,
         0 0 80px #d39b5b;
     cursor: pointer;
+}
+
+#question-levels {
+    margin-top: 30px;
+    align-items: center;
 }
 
 #levelchoice-area {
@@ -346,7 +352,7 @@ ul {
 }
 
 .intro {
-    margin: 1rem 1rem 0 1rem;
+    margin: 1rem;
     background-color: #00000095;
     color: #ffffff;
     text-shadow: #000 4px 4px 4px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
@@ -413,6 +419,11 @@ img {
     font-size: 1.5rem;
     font-family: 'Creepster', sans-serif;
     color: whitesmoke;
+}
+
+#play-again-same-user:hover {
+    color: #a8a8a8;
+    border: 1px solid #a8a8a8;
 }
 
 .btn_spook>a {
@@ -514,7 +525,7 @@ footer {
 
     .opaque h2 {
         letter-spacing: 2px;
-        font-size: 320%
+        font-size: 320%;
     }
 
     .opaque h3 {
@@ -531,7 +542,7 @@ footer {
     }
 
     .intro {
-        margin: 1rem 1rem 0 1rem;
+        margin: 1rem;
         padding: 1rem 3rem;
         width: 90%;
     }
@@ -572,11 +583,11 @@ footer {
 
     .opaque {
         padding: 1rem;
-        width: 600px;
+        width: 90%;
     }
 
     .opaque h2 {
-        font-size: 300%
+        font-size: 300%;
     }
 
     .opaque h3 {
@@ -593,7 +604,7 @@ footer {
     }
 
     .intro {
-        margin: 1rem 1rem 0 1rem;
+        margin: 1rem;
         padding: 1rem 2rem;
         width: 90%;
     }
@@ -645,11 +656,11 @@ footer {
 
     .opaque {
         padding: 0.8rem;
-        width: 600px;
+        width: 90%;
     }
 
     .opaque h2 {
-        font-size: 210%
+        font-size: 210%;
     }
 
     .opaque h3 {
@@ -674,8 +685,8 @@ footer {
     }
 
     .intro {
-        margin: 1rem 1rem 0 1rem;
-        padding: 1rem 1rem;
+        margin: 1rem;
+        padding: 1rem;
         width: 90%;
     }
 
@@ -718,11 +729,11 @@ footer {
 
     .opaque {
         padding: 0.8rem;
-        width: 600px;
+        width: 90%;
     }
 
     .opaque h2 {
-        font-size: 210%
+        font-size: 210%;
     }
 
     .opaque h3 {
@@ -739,9 +750,20 @@ footer {
     }
 
     .intro {
-        margin: 1rem 1rem 0 1rem;
-        padding: 1rem 5rem;
+        margin: 1rem;
+        padding: 1rem;
         width: 90%;
+    }
+
+    .intro h2 {
+        font-size: 150%;
+        letter-spacing: 2px;
+    }
+
+    .intro h3 {
+        font-size: 110%;
+        line-height: 140%;
+        margin-bottom: 10px;
     }
 
     footer {
