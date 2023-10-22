@@ -230,7 +230,35 @@ header {
 
 /* Styling for the game level choice area */
 
-.level, #answers-list {
+#levelchoice-area li:hover {
+    font-size: 160%;
+    font-weight: 700;
+    color: #f8eee4;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow:
+        0 0 20px #f2e2d0,
+        0 0 40px #d39b5b,
+        0 0 50px #d39b5b,
+        0 0 60px #d39b5b,
+        0 0 70px #d39b5b,
+        0 0 80px #d39b5b;
+    cursor: pointer;
+}
+
+#quiz-area li:hover {
+    font-size: 160%;
+    font-weight: 700;
+    color: #f8eee4;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow:
+        0 0 20px #f2e2d0,
+        0 0 40px #d39b5b,
+        0 0 50px #d39b5b,
+        0 0 60px #d39b5b,
+        0 0 70px #d39b5b,
+        0 0 80px #d39b5b;
     cursor: pointer;
 }
 
@@ -377,6 +405,11 @@ ul {
     color: whitesmoke;
 }
 
+.btn_spook:hover {
+    color: #a8a8a8;
+    border: 1px solid #a8a8a8;
+}
+
 img {
     border-radius: 20px;
     box-shadow: 5px 5px 10px #222222;
@@ -499,21 +532,6 @@ footer {
 
     #instructions li {
         font-size: 120%;
-    }
-
-    #levelchoice-area li:hover {
-        background-color: #8a0303;
-        cursor: pointer;
-    }
-
-    #quiz-area li:hover {
-        background-color: #8a0303;
-        cursor: pointer;
-    }
-
-    .btn:hover {
-        background-color: #8a0303;
-        cursor: pointer;
     }
 
     .intro {
