@@ -113,27 +113,6 @@ header {
     box-shadow: none;
 }
 
-/* Flashlight Overlay */
-/* :root {
-    cursor: none;
-    --cursorX: 50vw;
-    --cursorY: 50vh;
-}
-
-:root:before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    pointer-events: none;
-    background: radial-gradient(circle 10vmax at var(--cursorX) var(--cursorY),
-            rgba(0, 0, 0, 0) 0%,
-            rgba(0, 0, 0, .5) 80%,
-            rgba(0, 0, 0, .95) 100%)
-} */
-
-
 .video {
     position: fixed;
     top: 0;
@@ -141,11 +120,8 @@ header {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    /* Adjust the 'object-fit' property as needed */
     z-index: 9999;
-    /* Ensure the videos overlay on top of other content */
     background-color: rgba(0, 0, 0, 1);
-    /* Add a semi-transparent background */
     display: none;
 
 }
@@ -444,6 +420,39 @@ img {
     color: whitesmoke;
 }
 
+/*Styling for highscores page */
+.high-scores {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    color: #d39b5b;
+    font-family: 'Creepster', sans-serif;
+}
+
+.high-scores-label {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#high-scores-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#high-scores-list li {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #D39B5B;
+    /* Border color */
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem;
+}
 
 
 /* Styling of the footer */
@@ -466,36 +475,7 @@ footer {
     color: #ffffff;
 }
 
-/* Styles for the modal */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-}
 
-.modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #888;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 10px;
-    cursor: pointer;
-}
 
 /* Setting responsiveness of game at different screen width */
 
