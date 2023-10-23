@@ -240,7 +240,7 @@ function openRandomVideo() {
 // Function to get a random interval in milliseconds
 function getRandomInterval() {
   // Adjust the range and values as needed
-  return Math.floor(Math.random() * (50000 - 30000) + 20000);
+  return Math.floor(Math.random() * (80000 - 30000) + 20000);
   // return Math.floor(Math.random() * (50000 - 30000));
 }
 
