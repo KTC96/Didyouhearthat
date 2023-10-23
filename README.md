@@ -12,6 +12,8 @@
 ### Deployment
 The project is deployed and can be accessed at [Didyouhearthat](https://ktc96.github.io/Didyouhearthat/).
 
+![Banner](assets/docs/banner.jpg)
+
 ## ABOUT 
 ### Intro
 
