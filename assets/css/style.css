@@ -142,7 +142,7 @@ header {
     font-size: 340%;
 }
 
-.opaque h3 {
+.opaque h3, h1 {
     font-family: 'Creepster', Sans-serif;
     letter-spacing: 2px;
     color: #d39b5b;
