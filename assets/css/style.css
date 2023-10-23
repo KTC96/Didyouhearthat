@@ -100,18 +100,11 @@ header {
     display: flex;
     flex-direction: row-reverse;
     margin-right: 20px;
+    text-align: right;
 }
 
 .navbar-toggler {
-    padding: 0 40px;
-    border: none;
-}
-
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
+    margin: 5px;
 }
 
 .video {
