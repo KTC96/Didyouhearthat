@@ -75,7 +75,7 @@ header {
     -webkit-font-smoothing: antialiased;
 }
 
-#menu a:hover {
+#menu li:hover {
     font-size: 110%;
     font-weight: 700;
 }
@@ -100,18 +100,11 @@ header {
     display: flex;
     flex-direction: row-reverse;
     margin-right: 20px;
+    text-align: right;
 }
 
 .navbar-toggler {
-    padding: 0 40px;
-    border: none;
-}
-
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
+    margin: 5px;
 }
 
 .video {
@@ -218,7 +211,7 @@ audio::-webkit-media-controls-panel {
 }
 
 #levelchoice-area li:hover {
-    font-size: 160%;
+    font-size: 110%;
     font-weight: 700;
     color: #f8eee4;
     -webkit-text-stroke-width: 1px;
@@ -234,7 +227,7 @@ audio::-webkit-media-controls-panel {
 }
 
 #quiz-area li:hover {
-    font-size: 160%;
+    font-size: 110%;
     font-weight: 700;
     color: #f8eee4;
     -webkit-text-stroke-width: 1px;
