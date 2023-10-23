@@ -16,6 +16,7 @@ if (window.localStorage.getItem("username")) {
     "levelchoice-heading"
   ).innerText = `Welcome to the game ${user}!`;
 } else if (!window.localStorage.getItem("username")) {
+  alert("This website contains flash light content. If this is a cause for concern for you, please do not proceed to access the content of the site.");
   const submit = document.getElementById("submit");
   submit.addEventListener("click", validate);
 }
