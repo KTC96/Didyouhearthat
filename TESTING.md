@@ -7,45 +7,6 @@
 
 # DID YOU HEAR THAT? TESTING 
 
-## Validators
-
-- HTML - https://validator.w3.org/
-
-- CSS - https://jigsaw.w3.org/css-validator/
-
-- JavaScript - https://jshint.com/
-
-### HTML
-
-Here is the screenshot for the validator outcome for index.html:
-
-Here is the screenshot for the validator outcome for creators.html:
-
-Here is the screenshot for the validator outcome for highscore.html:
-
-Here is the screenshot for the validator outcome for end_game.html:
-
-Here is the screenshot for the validator outcome for 404.html:
-
-
-### CSS
-
-Here is the screenshot for the validator outcome for style.css:
-
-![css validator](/assets/docs/cssvalidatorimg.png)
-
-### JavaScript
-
-Here is the screenshot for the validator outcome for script.js:
-
-Here is the screenshot for the validator outcome for questions.js:
-
-Here is the screenshot for the validator outcome for highscore.js:
-
-Here is the screenshot for the validator outcome for end.js:
-
-## Lighthouse 
-
 ## Functionality Manual Testing
 
 ### Navbar - all pages
@@ -72,7 +33,7 @@ Here is the screenshot for the validator outcome for end.js:
 
 #### Instructions
 
-- **Clear accurate instructions are visible on welcome page**
+- Clear accurate instructions are visible on welcome page
 
 #### Moves to second menu when submit is clicked
 
@@ -123,37 +84,48 @@ Here is the screenshot for the validator outcome for end.js:
 
 #### Replay with same user name button
 
-- Button to replay takes you back to **menu**
+- Button to replay takes you back to choose which round
 
 #### Replay with different user name button
 
-- Button to replay takes you back to **menu**
+- Button to replay takes you back to enter a new username
 
 #### High scores button
+
+- Takes you to high score page
 
 ### Creators Page
 
 #### Links
 
-- **all links are correctly connected when clicked**
+- All links are correctly connected when clicked
 
 ### High scores
 
 #### Username Output
 
-- Name put in at beginning of game is visible when the **xxxxxxxxx** page loads
-- Each time you play it adds your username and score
+- Name put in at beginning of game is visible when the page loads against the score in the table
+- Each time you play it adds your username and score if you are in the top three player
+- Old scores retained
 
 ### Scares
 
+- Scares and appropriate audio appear randomly throughout game play
+- Epilepsy warning alert box appears at the beginning of game play to ensure that game is not played by 
+epileptics who might be triggered by scares
+
 ### Floating ghost
 
+- Floating ghost moves around the screen as expected throughout game play
+
 ### Theme tune on appropriate pages
+
+- Theme tune is not playing during game play so that you can hear the audio questions
+- Theme tune plays on loading of pages (except during game)
+
 
 ### Responsive
 
 The game is easily accessed on different screen sizes with the nav bar changing to drop down and text and container sizes adapting appropriately. 
 
 ![responsive](assets/docs/responsiveimg.png)
-
-### Test Cases
