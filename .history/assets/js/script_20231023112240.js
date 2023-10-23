@@ -1,5 +1,5 @@
 // Elements of code where taken from - Code by Marek https://www.codehim.com/vanilla-javascript/javascript-multiple-choice-questions-code/
-// Inpsiration and guidance for certain aspect of code were also obtained from the Code Institutes Love Maths game
+// Inspsiration and guidance for certain aspect of code were also obtained from the Code Institutes Love Maths game
 // and the Movie Quotes Quiz by Jose Maciel https://zemaciel.github.io/project-02/index.html
 // Validation of username was adapted from https://www.freecodecamp.org/news/form-validation-with-html5-and-javascript/
 
@@ -240,7 +240,7 @@ function openRandomVideo() {
 // Function to get a random interval in milliseconds
 function getRandomInterval() {
   // Adjust the range and values as needed
-  return Math.floor(Math.random() * (80000 - 30000) + 20000);
+  return Math.floor(Math.random() * (50000 - 30000) + 20000);
   // return Math.floor(Math.random() * (50000 - 30000));
 }
 

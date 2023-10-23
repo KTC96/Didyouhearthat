@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A quiz app involving scary halloween sounds">
@@ -135,9 +135,11 @@
   <!-- </section> To display the quiz questions and score tracker -->
   <section class="opaque" id="game-area">
     <div id="quiz-area">
-        What created the sound from this iconic movie?
       <h3 id="question-area">0</h3>
-        <audio id="mp4_src" controls autoplay src="#"></audio> 
+        <audio id="mp4_src" controls autoplay src="#" display=""> 
+            <!-- <source id="mp4_src" src="#" type="audio/mp3">  -->
+            <!-- <source id="mp4_src" src="assets/audio/zapsplat_shockwave_designed_002.mp3" type="audio/mp3">  -->
+        </audio> 
       <div id="answers-area">
         <ul id="answers-list"></ul>
       </div>

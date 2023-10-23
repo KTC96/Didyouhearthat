@@ -12,6 +12,8 @@
 ### Deployment
 The project is deployed and can be accessed at [Didyouhearthat](https://ktc96.github.io/Didyouhearthat/).
 
+![Banner](assets/docs/banner.jpg)
+
 ## ABOUT 
 ### Intro
 
@@ -33,7 +35,7 @@ Listen to the audio and see if you know how the sound was made.
 
 - Rachel Walmsley - the Scrum Master Extraordinaire
 - Kyle Clow - the Seasoned Sage
-- Ulrike Riemenschneider Ulrike Riemenschneider - the JavaScript Juggler
+- Ulrike Riemenschneider - the JavaScript Juggler
 - Sarah Barter - the Multitasker Dynamo
 - Natalia Czeladka - the CSS Wizard
 - Alexander Lungu - the Sound Ninja
@@ -42,7 +44,7 @@ Listen to the audio and see if you know how the sound was made.
 
 - Welcome Page - As a visiting user, I want to see the rules of the quiz and to be able to input my name. I then want be able to start the quiz. 
 
-- Game Selection Section - As a visiting user, I want to be able to choose between Movies and Sounds. 
+- Game Selection Section - As a visiting user, I want to be able to choose between Old Classic movie sounds or New Movie sounds. 
 
 - Game Main Section - As a visting user, I want to be able to see the audio and connecting answers. I want to see my score recorded.
 
@@ -54,31 +56,31 @@ Listen to the audio and see if you know how the sound was made.
 
 ### Features
 
-- Nav Bar - The title of the quiz is visible next to the app's logo. The title acts a link to the main page of the quiz. To the right there are links to the pages "Halloween Quiz" (the main quiz page), "High Score" (a page listing the user's high scores),and "Creators" (a page giving details on the app's creators). The same nav bar is displayed on every page of the app. On small screen devices the nav bar displays the app name and logo and a burger menu for the other page links.
+- Nav Bar - The title of the quiz is visible next to the app's logo. The title acts as a link to the main page of the quiz. To the right there are links to the pages "Halloween Quiz" (the main quiz page), "High Score" (a page listing the user's high scores),and "Creators" (a page giving details on the app's creators). The same nav bar is displayed on every page of the app. On small screen devices the nav bar displays the app name and logo and a burger menu for the other page links.
 
 - Quiz rules - The user will see the quiz rules on loading the app for the first time. 
 
-- Username input - The user is invited to type in their name. This makes the app more personal and will be used at the end of the game and on the High Score page.
+- Username input - The user is invited to type in their name. This makes the app more personal and will be used to engage the user at the end of the game and on the High Score page.
 
-- Quiz Start Section - The quiz section displays the first question showing the title of the film, the audio file which the user clicks to listen to, and three answer options. The user will see the total number of questions in the quiz and what number question they are answering. The will also see their total correct and total incorrect answers.
+- Quiz Start Section - A welcome message is displayed and the user is asked to choose between Old Classic Movies or New Movies. The quiz section then displays the first question showing the title of the film, the audio file, and three answer options. The user will see the total number of questions in the quiz and what number question they are answering. They will also see their total correct and total incorrect answers.
 
-- Quiz End Section - The user's final score is displayed. They then have the option to play again with the same name or to input a new name.
+- Quiz End Section - The user will be shown their score for total correct answers out of 10 for their selected round of questions, and they are given a message of support. They will have the option to play again as the same user or to change their username and play again. They can also navigate to the high score page.
 
-- High Score Page - 
+- High Score Page - The user will see their name and their high scores displayed. If they play more than once with the same username they will see their top 3 results.
 
-- Creators Page - The names of all the contributing developers are displayed along with links to their GitHub profiles, LinkedIn profiles and other social media accounts.
+- Creators Page - The names of all the contributing developers are displayed along with links to their GitHub profiles, LinkedIn profiles.
 
-- Footer - The copyright for the app is displayed. There is also a link to the app creators page. The same content is displayed on every page.
+- Footer - The copyright for the app is displayed. There is also a link to the app creators page. The same footer content is displayed on every page.
 
 ### Future Features
 
 - A submit button under the three answer options that the user will click after making their answer selection - this will improve UX and adhere to defensive design principles.
-- A separate page displaying the instructions - Currently, the instructions are displayed only once when the user first loads the game to input their name. Even though the game is quite straight forward in terms of its rules, we would like to add a separte instructions page so that the user can navigate to that should they require to.
+- A separate page displaying the instructions - Currently, the instructions are displayed only once when the user first loads the game to input their name. Even though the game is quite straight forward in terms of its rules, we would like to add a separate instructions page so that the user can navigate to that should they require to.
 - Correct or incorrect answer hightlight - We would like to have the selected answer option be highlighted in green if it is correct or else in red if it is incorrect. Currently the user can see if they were correct/incorrect as the score increments after each question is answered. But having a highlight feature would improve the UX of the app.
 
 #### Future Enhancements
 
-- To be prevent the ghost that haunts the app from passing over the quiz game section and blocking the user's access to clicking play on the audio or clicking on any of the answer options.
+- To prevent the ghost that haunts the app from passing over the quiz game section and blocking the user's access to clicking play on the audio or clicking on any of the answer options.
 - To have the answer options displayed in a random order so that if the game is played multiple times by the same player they will not see the answers displayed in the same order every time.
 
 ### Design

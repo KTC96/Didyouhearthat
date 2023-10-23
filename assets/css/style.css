@@ -75,11 +75,6 @@ header {
     -webkit-font-smoothing: antialiased;
 }
 
-#menu a:hover {
-    font-size: 110%;
-    font-weight: 700;
-}
-
 /* Code for neon text taken from css-tricks.com and edited slightly to fit the project's needs */
 #menu .active {
     font-size: 120%;
@@ -100,18 +95,11 @@ header {
     display: flex;
     flex-direction: row-reverse;
     margin-right: 20px;
+    text-align: right;
 }
 
 .navbar-toggler {
-    padding: 0 40px;
-    border: none;
-}
-
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
+    margin: 5px;
 }
 
 .video {
@@ -193,7 +181,7 @@ header {
 }
 
 #instructions {
-    font-size: 1.rem;
+    font-size: 1rem;
     font-weight: 500;
     list-style-type: disc;
     text-align: left;
@@ -217,38 +205,6 @@ audio::-webkit-media-controls-panel {
     background-color: #809aac;
 }
 
-#levelchoice-area li:hover {
-    font-size: 160%;
-    font-weight: 700;
-    color: #f8eee4;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    text-shadow:
-        0 0 20px #f2e2d0,
-        0 0 40px #d39b5b,
-        0 0 50px #d39b5b,
-        0 0 60px #d39b5b,
-        0 0 70px #d39b5b,
-        0 0 80px #d39b5b;
-    cursor: pointer;
-}
-
-#quiz-area li:hover {
-    font-size: 160%;
-    font-weight: 700;
-    color: #f8eee4;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    text-shadow:
-        0 0 20px #f2e2d0,
-        0 0 40px #d39b5b,
-        0 0 50px #d39b5b,
-        0 0 60px #d39b5b,
-        0 0 70px #d39b5b,
-        0 0 80px #d39b5b;
-    cursor: pointer;
-}
-
 #question-levels {
     margin-top: 30px;
     align-items: center;
@@ -264,7 +220,6 @@ audio::-webkit-media-controls-panel {
     margin: 0.3rem;
     text-align: center;
     background-color: black;
-    border: 1px solid black;
     border-radius: 0.5rem;
 }
 
@@ -288,7 +243,6 @@ ul {
     margin: 0.3rem;
     text-align: center;
     background-color: black;
-    border: 1px solid black;
     border-radius: 0.5rem;
 }
 
@@ -343,10 +297,6 @@ ul {
     color: #557596;
 }
 
-.social_list a:hover {
-    color: #87a0ba;
-}
-
 .creators {
     display: flex;
     flex-direction: column;
@@ -397,15 +347,9 @@ ul {
     color: whitesmoke;
 }
 
-.btn_spook:hover {
-    color: #a8a8a8;
-    border: 1px solid #a8a8a8;
-}
-
-img {
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px #222222;
-    max-width: 350px;
+.final-score-area img {
+    width: 200px;
+    padding: 25px;
 }
 
 #play-again-same-user {
@@ -420,11 +364,6 @@ img {
     font-size: 1.5rem;
     font-family: 'Creepster', sans-serif;
     color: whitesmoke;
-}
-
-#play-again-same-user:hover {
-    color: #a8a8a8;
-    border: 1px solid #a8a8a8;
 }
 
 .btn_spook>a {
@@ -464,6 +403,7 @@ img {
 footer {
     padding: 20px;
     width: 100%;
+    margin-top: 10px;
     background-color: #00000080;
     font-size: 130%;
     color: #d39b5b;
@@ -475,12 +415,6 @@ footer {
     text-decoration: none;
     color: inherit;
 }
-
-.int-link:hover {
-    color: #ffffff;
-}
-
-
 
 /* Setting responsiveness of game at different screen width */
 
@@ -495,6 +429,63 @@ footer {
 
     footer {
         font-size: 100%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #menu li:hover {
+        font-size: 220%;
+        font-weight: 700;
+    }
+
+    #levelchoice-area li:hover {
+        font-size: 110%;
+        font-weight: 700;
+        color: #f8eee4;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        text-shadow:
+            0 0 20px #f2e2d0,
+            0 0 40px #d39b5b,
+            0 0 50px #d39b5b,
+            0 0 60px #d39b5b,
+            0 0 70px #d39b5b,
+            0 0 80px #d39b5b;
+        cursor: pointer;
+    }
+    
+    #quiz-area li:hover {
+        font-size: 110%;
+        font-weight: 700;
+        color: #f8eee4;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        text-shadow:
+            0 0 20px #f2e2d0,
+            0 0 40px #d39b5b,
+            0 0 50px #d39b5b,
+            0 0 60px #d39b5b,
+            0 0 70px #d39b5b,
+            0 0 80px #d39b5b;
+        cursor: pointer;
+    }
+
+    .social_list a:hover {
+        color: #87a0ba;
+    }
+
+    .btn_spook:hover {
+        color: #a8a8a8;
+        border: 1px solid #a8a8a8;
+    }
+
+    #play-again-same-user:hover {
+        color: #a8a8a8;
+        border: 1px solid #a8a8a8;
+    }
+
+    .int-link:hover {
+        color: #ffffff;
     }
 }
 
@@ -614,6 +605,13 @@ footer {
         margin-bottom: 10px;
     }
 
+    .btn_spook {
+        margin-top:10px;
+        padding: 0.1rem 1rem;
+        border-radius: 0.5rem;
+        font-size: 1.3rem;
+    }
+
     footer {
         font-size: 110%;
     }
@@ -700,6 +698,13 @@ footer {
         line-height: 180%;
     }
 
+    .btn_spook {
+        margin-top:10px;
+        padding: 0.1rem 1rem;
+        border-radius: 0.5rem;
+        font-size: 1.3rem;
+    }
+
     footer {
         font-size: 100%;
     }
@@ -758,6 +763,13 @@ footer {
         font-size: 110%;
         line-height: 140%;
         margin-bottom: 10px;
+    }
+
+    .btn_spook {
+        margin-top:10px;
+        padding: 0.1rem 1rem;
+        border-radius: 0.5rem;
+        font-size: 1.3rem;
     }
 
     footer {

@@ -54,7 +54,7 @@ function validate(e) {
 
 let questionArea = document.getElementById("question-area");
 let answerArea = document.getElementById("answers-list");
-let audioArea = document.getElementById("mp4_src");
+let audioArea = document.getElementById("mp4_src")
 let allQuestions;
 let current = 0;
 let score = 0;
@@ -138,7 +138,7 @@ function checkAnswer(i, arr) {
       incrementWrongAnswer();
     }
 
-    if (current == 0) {
+    if (current == 0) {    
       answersDone.push(current);
     } else {
       answersDone.push(questionIndex);
@@ -149,8 +149,14 @@ function checkAnswer(i, arr) {
         questionIndex = Math.floor(Math.random() * allQuestions.length);
       } while (answersDone.includes(questionIndex));
     } else {
-      console.log("All questions have been answered");
+      console.log("All questions have been answered")
     }
+    // console.log(questionIndex);
+    // if (answersDone.includes(questionIndex)) {
+    //   console.log("Question already done")
+    // } else {
+    //   console.log("Question not done yet")
+    // }
 
     if (answersDone.length < allQuestions.length) {
       current += 1;
@@ -240,7 +246,7 @@ function openRandomVideo() {
 // Function to get a random interval in milliseconds
 function getRandomInterval() {
   // Adjust the range and values as needed
-  return Math.floor(Math.random() * (80000 - 30000) + 20000);
+  return Math.floor(Math.random() * (50000 - 30000) + 20000);
   // return Math.floor(Math.random() * (50000 - 30000));
 }
 
@@ -259,3 +265,8 @@ function pauseTheme() {
 
 // Start the process
 // openRandomVideo();
+
+module.exports = {
+  pauseTheme,
+  playTheme,
+};
