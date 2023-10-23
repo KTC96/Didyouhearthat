@@ -32,7 +32,7 @@ Here is the screenshot for the validator outcome for 404.html:
 
 Here is the screenshot for the validator outcome for style.css:
 
-![css validator](/assets/docs/cssvalidator.png)
+![css validator](/assets/docs/cssvalidatorimg.png)
 
 ### JavaScript
 
@@ -154,6 +154,6 @@ Here is the screenshot for the validator outcome for end.js:
 
 The game is easily accessed on different screen sizes with the nav bar changing to drop down and text and container sizes adapting appropriately. 
 
-![responsive](assets/docs/responsive.png)
+![responsive](assets/docs/responsiveimg.png)
 
 ### Test Cases
