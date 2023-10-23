@@ -17,9 +17,32 @@
 
 ### HTML
 
+Here is the screenshot for the validator outcome for index.html:
+
+Here is the screenshot for the validator outcome for creators.html:
+
+Here is the screenshot for the validator outcome for highscore.html:
+
+Here is the screenshot for the validator outcome for end_game.html:
+
+Here is the screenshot for the validator outcome for 404.html:
+
+
 ### CSS
 
+Here is the screenshot for the validator outcome for style.css:
+
+![css validator](/assets/docs/cssvalidator.png)
+
 ### JavaScript
+
+Here is the screenshot for the validator outcome for script.js:
+
+Here is the screenshot for the validator outcome for questions.js:
+
+Here is the screenshot for the validator outcome for highscore.js:
+
+Here is the screenshot for the validator outcome for end.js:
 
 ## Lighthouse 
 
@@ -30,6 +53,8 @@
 - Logo and title take you to welcome screen
 - Drop down button is visible on smaller screens
 - Dropdown button provides links to Halloween Quiz, Creators and HighScore
+- On larger screens the links are all visible without a dropdown and change size when hovered over.
+- Current page on nav bar links is white to confirm which page you are on
 - Links take you to correct place when clicked
 
 ### Footer - all pages
@@ -41,13 +66,13 @@
 
 #### Username Input
 
-- Input can't be blank as it is required to move on
+- Input can't be blank as it is required to move on but provides an appropriate error message when attempting to leave blank
 - Input takes letters on the screen 
 - User's name is saved in local storage when submit is clicked
 
 #### Instructions
 
-- Clear accurate instructions are visible on welcome page
+- **Clear accurate instructions are visible on welcome page**
 
 #### Moves to second menu when submit is clicked
 
@@ -57,6 +82,7 @@
 
 #### Menu Buttons
 
+- Menu button change size and light up when hovered over.
 - Menu buttons take you through to the appropriate part of the quiz
 
 ### Quiz page
@@ -66,36 +92,68 @@
 - Auto plays when the question is asked
 - Plays relevant sound for the question
 - Replay button provides the sound again
+- Slight shadow is visible behind replay button
+- Total time associated with audio clip is correct
+- Current part of audio clip time is correct
+- Mute button for the audio clips replaying works
+- Volume control for  the audio clips works
+- Mute and volume control for the audio clips does not affect the scare sound
+- Download option on three dots downloads the file
+- Speed adjust option on the three dots adjusts the speed correctly
 
-#### Answer **BUTTONSRADIAL**
 
-- When hovered over button changes **colour or something?**
-- When clicked button changes **colour or something?**
-- When clicked button activates score increment and **then moves to next page?**
+#### Answer buttons
+
+- When hovered over button changes size and glows
+- When clicked button changes moves you to the next question
+- When clicked button activates score increment 
 
 #### Score Display
 
 - When a question is answered either correct or incorrect score increments
 - Score is easily read throughout the game
 
-### End Page
+### End Score Display
 
-#### Score
+#### Score and messages
 
-- Score is displayed
+- Score is displayed for 2 seconds before automatically moving to end_game.html
+- A personalised message using the name entered by the user is displayed accompanied by their final score and which round they were playing
+- Depending on the score correct message is put on the screen, congratulating them or suggesting that they do better.
 
-#### Replay **button or link**
+#### Replay with same user name button
 
-- **link or button** to replay takes you back to **menu**
+- Button to replay takes you back to **menu**
+
+#### Replay with different user name button
+
+- Button to replay takes you back to **menu**
+
+#### High scores button
 
 ### Creators Page
 
 #### Links
 
-- all links are correctly connected when clicked
+- **all links are correctly connected when clicked**
+
+### High scores
 
 #### Username Output
 
 - Name put in at beginning of game is visible when the **xxxxxxxxx** page loads
+- Each time you play it adds your username and score
+
+### Scares
+
+### Floating ghost
+
+### Theme tune on appropriate pages
+
+### Responsive
+
+The game is easily accessed on different screen sizes with the nav bar changing to drop down and text and container sizes adapting appropriately. 
+
+![responsive](assets/docs/responsive.png)
 
 ### Test Cases
