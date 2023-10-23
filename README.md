@@ -163,6 +163,8 @@ The steps taken to deploy the project:
 - Images open sourced from -  [Shutterstock](https://www.shutterstock.com/), [Unsplash](https://www.unsplash.com/)
 - Audio files open sourced from - see audio credit list [here](AUDIOCREDITS.md)
 - Image for 404 page open sourced from -  [Freepik](http://www.freepik.com)
+- Code for neon text taken from - [css-tricks.com](css-tricks.com)
+- Code for outline effect taken from - [stackoverflow.com](stackoverflow.com)
 
 
 #### Code from the team's projects
@@ -172,4 +174,5 @@ The team combined code from personal quiz projects:
 - [The Green Dragon Pub Quiz](https://github.com/KTC96/TheGreenDragonPubQuiz/blob/main/assets/JS/script.js) 
 - [Geography Game](https://github.com/URiem/geography-game/blob/main/assets/js/script.js) 
 - [Art Quiz App](https://github.com/barty-s/art-quiz-app/blob/main/assets/js/script.js)
+- [It's Just a Phase!](https://nataliaczeladka.github.io/its-just-a-phase/)
 
