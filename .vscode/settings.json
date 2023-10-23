@@ -27,5 +27,8 @@
    "cSpell.ignoreWords": [
       "jumpscare",
       "zombiechild"
+   ],
+   "githubPullRequests.ignoredPullRequestBranches": [
+      "main"
    ]
 }
